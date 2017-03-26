@@ -309,6 +309,7 @@
             this.dgvListaMedicamentosDos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvListaMedicamentosDos.Size = new System.Drawing.Size(578, 228);
             this.dgvListaMedicamentosDos.TabIndex = 6;
+            this.dgvListaMedicamentosDos.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvListaMedicamentosDos_CellDoubleClick);
             // 
             // btnBuscarId
             // 
@@ -349,7 +350,6 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(134)))), ((int)(((byte)(180)))));
             this.Controls.Add(this.tabControlMedicamentos);
             this.Name = "Paciente";
             this.Size = new System.Drawing.Size(784, 529);

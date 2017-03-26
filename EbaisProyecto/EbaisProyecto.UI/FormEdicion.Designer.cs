@@ -30,14 +30,15 @@
         {
             this.SuspendLayout();
             // 
-            // PruebaEdicion
+            // FormEdicion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(337, 394);
-            this.Name = "PruebaEdicion";
+            this.Name = "FormEdicion";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.Text = "PruebaEdicion";
+            this.Load += new System.EventHandler(this.FormEdicion_Load);
             this.ResumeLayout(false);
 
         }

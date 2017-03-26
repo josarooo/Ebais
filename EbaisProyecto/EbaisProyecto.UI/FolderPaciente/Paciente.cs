@@ -17,6 +17,7 @@ namespace EbaisProyecto.UI
 {
     public partial class Paciente : UserControl
     {
+       
         public Paciente()
         {
             InitializeComponent();
@@ -45,22 +46,41 @@ namespace EbaisProyecto.UI
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
-            
+            //FormEdicion ventanaEditarPaciente = new FormEdicion();
+           
+
+            MostrarPanelEdicion();
+
+
+        }
+
+        
+
+
+     
+
+        private void dgvListaMedicamentosDos_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            MostrarPanelEdicion();
+
+        }
+
+
+        private void MostrarPanelEdicion()
+        {
             var editarPaciente = new EditarPaciente();
             editarPaciente.txtCedula.Text = dgvListaMedicamentosDos.SelectedCells[0].Value.ToString();
             editarPaciente.txtNombre.Text = dgvListaMedicamentosDos.SelectedCells[1].Value.ToString();
             editarPaciente.txtApellidos.Text = dgvListaMedicamentosDos.SelectedCells[2].Value.ToString();
             editarPaciente.numTelefono.Value = Convert.ToInt32(dgvListaMedicamentosDos.SelectedCells[3].Value);
-            editarPaciente.dtpFechaNacimiento.Value = Convert.ToDateTime(dgvListaMedicamentosDos.SelectedCells[4].Value);
-
+            editarPaciente.dtpFechaNacimiento.Value = Convert.ToDateTime(dgvListaMedicamentosDos.SelectedCells[4].Value);           
             editarPaciente.txtCedula.Enabled = false;
 
-
             FormEdicion ventanaEditarPaciente = new FormEdicion();
-
             ventanaEditarPaciente.Controls.Add(editarPaciente);
-            ventanaEditarPaciente.Show();
-           // MessageBox.Show(dgvListaMedicamentosDos.SelectedCells[1].Value.ToString());
+            ventanaEditarPaciente.ShowDialog();
+
+            
 
 
         }

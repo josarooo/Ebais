@@ -19,7 +19,7 @@ namespace EbaisProyecto.UI
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            //pnlInicio.BringToFront();
+            
             pnlFarmacia.Visible = false;
             pnlPaciente.Visible = false;
             pnlExpediente.Visible = false;
@@ -166,6 +166,11 @@ namespace EbaisProyecto.UI
         private void padecimiento1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void Principal_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Environment.Exit(1);
         }
     }
   

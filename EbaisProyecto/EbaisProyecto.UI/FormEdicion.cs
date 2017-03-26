@@ -16,5 +16,16 @@ namespace EbaisProyecto.UI
         {
             InitializeComponent();
         }
+
+        private void FormEdicion_Load(object sender, EventArgs e)
+        {
+
+        }
+
+     
+       
+
+
+
     }
 }
