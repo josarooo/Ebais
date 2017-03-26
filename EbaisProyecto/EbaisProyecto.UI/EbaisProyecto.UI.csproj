@@ -98,6 +98,12 @@
     <Compile Include="FolderPaciente\EditarPaciente.Designer.cs">
       <DependentUpon>EditarPaciente.cs</DependentUpon>
     </Compile>
+    <Compile Include="FolderPaciente\VerPaciente.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FolderPaciente\VerPaciente.Designer.cs">
+      <DependentUpon>VerPaciente.cs</DependentUpon>
+    </Compile>
     <Compile Include="FolderUsuario\EditarUsuario.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -177,6 +183,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FolderPaciente\EditarPaciente.resx">
       <DependentUpon>EditarPaciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FolderPaciente\VerPaciente.resx">
+      <DependentUpon>VerPaciente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FolderUsuario\EditarUsuario.resx">
       <DependentUpon>EditarUsuario.cs</DependentUpon>

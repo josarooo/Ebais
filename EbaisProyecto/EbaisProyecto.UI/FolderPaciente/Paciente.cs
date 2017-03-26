@@ -162,5 +162,20 @@ namespace EbaisProyecto.UI
             dgvListaPacientes.Columns[6].Visible = false;
             dgvListaPacientes.Columns[7].Visible = false;
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            var verPaciente = new VerPaciente();
+            verPaciente.txtCedula.Text = dgvListaPacientes.SelectedCells[0].Value.ToString();
+            verPaciente.txtNombre.Text = dgvListaPacientes.SelectedCells[1].Value.ToString();
+            verPaciente.txtApellidos.Text = dgvListaPacientes.SelectedCells[2].Value.ToString();
+            verPaciente.numTelefono.Value = Convert.ToInt32(dgvListaPacientes.SelectedCells[3].Value);
+            verPaciente.txtFecha.Text = dgvListaPacientes.SelectedCells[4].Value.ToString();
+            verPaciente.rchDireccion.Text = dgvListaPacientes.SelectedCells[5].Value.ToString();
+            verPaciente.txtSexo.Text = dgvListaPacientes.SelectedCells[8].Value.ToString();
+            FormEdicion ventanaEditarPaciente = new FormEdicion();
+            ventanaEditarPaciente.Controls.Add(verPaciente);
+            ventanaEditarPaciente.ShowDialog();
+        }
     }
 }

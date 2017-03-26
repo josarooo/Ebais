@@ -202,3 +202,4 @@ C:\Users\josaro\Desktop\GitHub\EbaisProyecto\EbaisProyecto.UI\obj\Debug\EbaisPro
 C:\Users\josaro\Desktop\GitHub\EbaisProyecto\EbaisProyecto.UI\obj\Debug\EbaisProyecto.UI.FormEdicion.resources
 C:\Users\josaro\Desktop\GitHub\EbaisProyecto\EbaisProyecto.UI\obj\Debug\EbaisProyecto.UI.Usuario.resources
 C:\Users\josaro\Desktop\GitHub\EbaisProyecto\EbaisProyecto.UI\obj\Debug\EbaisProyecto.UI.csproj.GenerateResource.Cache
+C:\Users\josaro\Desktop\GitHub\EbaisProyecto\EbaisProyecto.UI\obj\Debug\EbaisProyecto.UI.FolderPaciente.VerPaciente.resources
