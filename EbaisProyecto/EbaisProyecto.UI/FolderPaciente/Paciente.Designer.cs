@@ -51,16 +51,17 @@
             this.button2 = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
-            this.dgvListaMedicamentosDos = new System.Windows.Forms.DataGridView();
+            this.dgvListaPacientes = new System.Windows.Forms.DataGridView();
             this.btnBuscarId = new System.Windows.Forms.Button();
             this.txtNombreB = new System.Windows.Forms.TextBox();
             this.label35 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.tabControlMedicamentos.SuspendLayout();
             this.tabPagePadecimientos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numTelefono)).BeginInit();
             this.tabPageConsultaMedicamentos.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvListaMedicamentosDos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvListaPacientes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -79,6 +80,7 @@
             // tabPagePadecimientos
             // 
             this.tabPagePadecimientos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(203)))), ((int)(((byte)(227)))));
+            this.tabPagePadecimientos.Controls.Add(this.label2);
             this.tabPagePadecimientos.Controls.Add(this.btnGuardar);
             this.tabPagePadecimientos.Controls.Add(this.rchDireccion);
             this.tabPagePadecimientos.Controls.Add(this.btnLimpiar);
@@ -135,6 +137,7 @@
             this.btnLimpiar.TabIndex = 83;
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.UseVisualStyleBackColor = false;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
             // label1
             // 
@@ -158,6 +161,11 @@
             // 
             this.numTelefono.BackColor = System.Drawing.SystemColors.Window;
             this.numTelefono.Location = new System.Drawing.Point(248, 190);
+            this.numTelefono.Maximum = new decimal(new int[] {
+            -727379968,
+            232,
+            0,
+            0});
             this.numTelefono.Name = "numTelefono";
             this.numTelefono.Size = new System.Drawing.Size(159, 20);
             this.numTelefono.TabIndex = 77;
@@ -198,8 +206,16 @@
             // 
             // cbSexo
             // 
+            this.cbSexo.AutoCompleteCustomSource.AddRange(new string[] {
+            "Hombre",
+            "Mujer",
+            "Otro"});
             this.cbSexo.BackColor = System.Drawing.SystemColors.Window;
             this.cbSexo.FormattingEnabled = true;
+            this.cbSexo.Items.AddRange(new object[] {
+            "Hombre",
+            "Mujer",
+            "Otro"});
             this.cbSexo.Location = new System.Drawing.Point(470, 190);
             this.cbSexo.Name = "cbSexo";
             this.cbSexo.Size = new System.Drawing.Size(121, 21);
@@ -255,7 +271,7 @@
             this.tabPageConsultaMedicamentos.Controls.Add(this.button2);
             this.tabPageConsultaMedicamentos.Controls.Add(this.btnEditar);
             this.tabPageConsultaMedicamentos.Controls.Add(this.btnEliminar);
-            this.tabPageConsultaMedicamentos.Controls.Add(this.dgvListaMedicamentosDos);
+            this.tabPageConsultaMedicamentos.Controls.Add(this.dgvListaPacientes);
             this.tabPageConsultaMedicamentos.Controls.Add(this.btnBuscarId);
             this.tabPageConsultaMedicamentos.Controls.Add(this.txtNombreB);
             this.tabPageConsultaMedicamentos.Controls.Add(this.label35);
@@ -297,19 +313,20 @@
             this.btnEliminar.TabIndex = 7;
             this.btnEliminar.Text = "Eliminar ";
             this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
-            // dgvListaMedicamentosDos
+            // dgvListaPacientes
             // 
-            this.dgvListaMedicamentosDos.BackgroundColor = System.Drawing.Color.WhiteSmoke;
-            this.dgvListaMedicamentosDos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvListaMedicamentosDos.Location = new System.Drawing.Point(97, 136);
-            this.dgvListaMedicamentosDos.MultiSelect = false;
-            this.dgvListaMedicamentosDos.Name = "dgvListaMedicamentosDos";
-            this.dgvListaMedicamentosDos.ReadOnly = true;
-            this.dgvListaMedicamentosDos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvListaMedicamentosDos.Size = new System.Drawing.Size(578, 228);
-            this.dgvListaMedicamentosDos.TabIndex = 6;
-            this.dgvListaMedicamentosDos.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvListaMedicamentosDos_CellDoubleClick);
+            this.dgvListaPacientes.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.dgvListaPacientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvListaPacientes.Location = new System.Drawing.Point(97, 136);
+            this.dgvListaPacientes.MultiSelect = false;
+            this.dgvListaPacientes.Name = "dgvListaPacientes";
+            this.dgvListaPacientes.ReadOnly = true;
+            this.dgvListaPacientes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvListaPacientes.Size = new System.Drawing.Size(578, 228);
+            this.dgvListaPacientes.TabIndex = 6;
+            this.dgvListaPacientes.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvListaMedicamentosDos_CellDoubleClick);
             // 
             // btnBuscarId
             // 
@@ -346,6 +363,16 @@
             this.pictureBox1.TabIndex = 14;
             this.pictureBox1.TabStop = false;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(391, 190);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(17, 20);
+            this.label2.TabIndex = 86;
+            this.label2.Text = "  ";
+            // 
             // Paciente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -360,7 +387,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numTelefono)).EndInit();
             this.tabPageConsultaMedicamentos.ResumeLayout(false);
             this.tabPageConsultaMedicamentos.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvListaMedicamentosDos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvListaPacientes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -390,10 +417,11 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Button btnEliminar;
-        private System.Windows.Forms.DataGridView dgvListaMedicamentosDos;
+        private System.Windows.Forms.DataGridView dgvListaPacientes;
         private System.Windows.Forms.Button btnBuscarId;
         private System.Windows.Forms.TextBox txtNombreB;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label2;
     }
 }

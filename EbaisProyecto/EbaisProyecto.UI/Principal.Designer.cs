@@ -247,7 +247,7 @@
             this.inicio1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(203)))), ((int)(((byte)(227)))));
             this.inicio1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.inicio1.Location = new System.Drawing.Point(0, -3);
-            this.inicio1.Margin = new System.Windows.Forms.Padding(4);
+            this.inicio1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.inicio1.Name = "inicio1";
             this.inicio1.Size = new System.Drawing.Size(784, 529);
             this.inicio1.TabIndex = 0;
@@ -264,7 +264,7 @@
             // 
             this.farmacia1.BackColor = System.Drawing.Color.Transparent;
             this.farmacia1.Location = new System.Drawing.Point(0, 3);
-            this.farmacia1.Margin = new System.Windows.Forms.Padding(4);
+            this.farmacia1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.farmacia1.Name = "farmacia1";
             this.farmacia1.Size = new System.Drawing.Size(784, 529);
             this.farmacia1.TabIndex = 0;
@@ -281,7 +281,7 @@
             // 
             this.paciente1.BackColor = System.Drawing.Color.Transparent;
             this.paciente1.Location = new System.Drawing.Point(-3, 6);
-            this.paciente1.Margin = new System.Windows.Forms.Padding(4);
+            this.paciente1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.paciente1.Name = "paciente1";
             this.paciente1.Size = new System.Drawing.Size(784, 529);
             this.paciente1.TabIndex = 1;
@@ -297,7 +297,7 @@
             // usuario1
             // 
             this.usuario1.Location = new System.Drawing.Point(3, 3);
-            this.usuario1.Margin = new System.Windows.Forms.Padding(4);
+            this.usuario1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.usuario1.Name = "usuario1";
             this.usuario1.Size = new System.Drawing.Size(784, 529);
             this.usuario1.TabIndex = 0;
@@ -313,7 +313,7 @@
             // preconsulta1
             // 
             this.preconsulta1.Location = new System.Drawing.Point(3, 3);
-            this.preconsulta1.Margin = new System.Windows.Forms.Padding(4);
+            this.preconsulta1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.preconsulta1.Name = "preconsulta1";
             this.preconsulta1.Size = new System.Drawing.Size(784, 529);
             this.preconsulta1.TabIndex = 0;
@@ -330,7 +330,7 @@
             // 
             this.padecimiento1.BackColor = System.Drawing.Color.Transparent;
             this.padecimiento1.Location = new System.Drawing.Point(3, 6);
-            this.padecimiento1.Margin = new System.Windows.Forms.Padding(4);
+            this.padecimiento1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.padecimiento1.Name = "padecimiento1";
             this.padecimiento1.Size = new System.Drawing.Size(784, 529);
             this.padecimiento1.TabIndex = 0;
@@ -348,7 +348,7 @@
             // 
             this.diagnostico1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(203)))), ((int)(((byte)(227)))));
             this.diagnostico1.Location = new System.Drawing.Point(0, 3);
-            this.diagnostico1.Margin = new System.Windows.Forms.Padding(4);
+            this.diagnostico1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.diagnostico1.Name = "diagnostico1";
             this.diagnostico1.Size = new System.Drawing.Size(784, 529);
             this.diagnostico1.TabIndex = 0;
@@ -365,7 +365,7 @@
             // 
             this.expediente1.BackColor = System.Drawing.Color.Transparent;
             this.expediente1.Location = new System.Drawing.Point(3, 3);
-            this.expediente1.Margin = new System.Windows.Forms.Padding(4);
+            this.expediente1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.expediente1.Name = "expediente1";
             this.expediente1.Size = new System.Drawing.Size(784, 529);
             this.expediente1.TabIndex = 0;
@@ -381,7 +381,7 @@
             // cita1
             // 
             this.cita1.Location = new System.Drawing.Point(0, 6);
-            this.cita1.Margin = new System.Windows.Forms.Padding(4);
+            this.cita1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cita1.Name = "cita1";
             this.cita1.Size = new System.Drawing.Size(784, 529);
             this.cita1.TabIndex = 0;
@@ -402,6 +402,7 @@
             this.Controls.Add(this.pnlPaciente);
             this.Controls.Add(this.pnlFarmacia);
             this.Controls.Add(this.menuStrOpciones);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Principal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

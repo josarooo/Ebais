@@ -6,26 +6,23 @@ using System.Threading.Tasks;
 using EbaisProyecto.DATOS;
 namespace EbaisProyecto.DAL.Interfaces
 {
-  public  interface IUsuario
+  public  interface IUsuario 
     {
         //METODOS CRUD
 
         //SELECTS
         List<Usuarios> ListarUsuarios();
-        Usuarios BuscarCuenta(int cedula);
-
-
-
+        Usuarios BuscarUsuario(int cedula);
 
         //INSERT
-        void InsertarCuenta(Usuarios usuario);
+        void InsertarUsuario(Usuarios usuario);
 
 
         //UPDATE
-        void ActualizarCuenta(Usuarios usuario);
+        void ActualizarUsuario(Usuarios usuario);
 
         //Delete
-        void EliminarCuenta(int cedula);
+        void EliminarUsuario(int cedula);
 
 
     }

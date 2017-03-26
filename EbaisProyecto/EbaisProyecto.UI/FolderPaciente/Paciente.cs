@@ -17,7 +17,9 @@ namespace EbaisProyecto.UI
 {
     public partial class Paciente : UserControl
     {
-       
+        IUsuario us = new MUsuario();
+
+
         public Paciente()
         {
             InitializeComponent();
@@ -25,7 +27,34 @@ namespace EbaisProyecto.UI
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
+            try
+            {
+                var usuario = new Usuarios
+                {
+                    Cedula = Convert.ToInt32(txtCedula.Text),
+                    Nombre = txtNombre.Text,
+                    Apellidos = txtApellidos.Text,
+                    Telefono = Convert.ToInt32(numTelefono.Value),
+                    FechaNacimiento = dtpFechaNacimiento.Value,
+                    Direccion = rchDireccion.Text,
+                    TipoUsuario = "Paciente",
+                    Password = null,
+                    Sexo = cbSexo.SelectedItem.ToString()
+                };
 
+
+                us.InsertarUsuario(usuario);
+
+
+                MessageBox.Show("Paciente insertado con éxito", "Información");
+                LimpiarCampos();
+                PopularDGVPacientes();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Ha ocurrido un error. " + ex.Message, "ERROR");
+            }
         }
 
         private void Paciente_Load(object sender, EventArgs e)
@@ -33,9 +62,10 @@ namespace EbaisProyecto.UI
 
             try
             {
-                IUsuario us = new MUsuario();
-                var listaPacientes = us.ListarUsuarios();
-                dgvListaMedicamentosDos.DataSource = listaPacientes;
+                cbSexo.SelectedIndex = 0;
+                PopularDGVPacientes();
+
+
             }
             catch (Exception ex)
             {
@@ -46,43 +76,91 @@ namespace EbaisProyecto.UI
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
-            //FormEdicion ventanaEditarPaciente = new FormEdicion();
-           
 
-            MostrarPanelEdicion();
+            try
+            {
+                MostrarPanelEdicion();
 
 
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ha ocurrido un error. " + ex.Message, "ERROR");
+
+            }
         }
-
-        
-
-
-     
-
         private void dgvListaMedicamentosDos_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            MostrarPanelEdicion();
+            try
+            {
+                MostrarPanelEdicion();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ha ocurrido un error. " + ex.Message, "ERROR");
 
+            }
         }
 
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            LimpiarCampos();
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+                us.EliminarUsuario(Convert.ToInt32(dgvListaPacientes.SelectedCells[0].Value.ToString()));
+                MessageBox.Show("Se ha eliminado correctamente el paciente.", "Información");
+                PopularDGVPacientes();
+
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Ha ocurrido un error. " + ex.Message, "ERROR");
+            }
+
+        }
 
         private void MostrarPanelEdicion()
         {
             var editarPaciente = new EditarPaciente();
-            editarPaciente.txtCedula.Text = dgvListaMedicamentosDos.SelectedCells[0].Value.ToString();
-            editarPaciente.txtNombre.Text = dgvListaMedicamentosDos.SelectedCells[1].Value.ToString();
-            editarPaciente.txtApellidos.Text = dgvListaMedicamentosDos.SelectedCells[2].Value.ToString();
-            editarPaciente.numTelefono.Value = Convert.ToInt32(dgvListaMedicamentosDos.SelectedCells[3].Value);
-            editarPaciente.dtpFechaNacimiento.Value = Convert.ToDateTime(dgvListaMedicamentosDos.SelectedCells[4].Value);           
-            editarPaciente.txtCedula.Enabled = false;
-
+            editarPaciente.txtCedula.Text = dgvListaPacientes.SelectedCells[0].Value.ToString();
+            editarPaciente.txtNombre.Text = dgvListaPacientes.SelectedCells[1].Value.ToString();
+            editarPaciente.txtApellidos.Text = dgvListaPacientes.SelectedCells[2].Value.ToString();
+            editarPaciente.numTelefono.Value = Convert.ToInt32(dgvListaPacientes.SelectedCells[3].Value);
+            editarPaciente.dtpFechaNacimiento.Value = Convert.ToDateTime(dgvListaPacientes.SelectedCells[4].Value);
+            editarPaciente.rchDireccion.Text = dgvListaPacientes.SelectedCells[5].Value.ToString();
+            editarPaciente.cbSexo.SelectedItem = dgvListaPacientes.SelectedCells[8].Value.ToString();
             FormEdicion ventanaEditarPaciente = new FormEdicion();
             ventanaEditarPaciente.Controls.Add(editarPaciente);
             ventanaEditarPaciente.ShowDialog();
+            PopularDGVPacientes();
+        }
 
-            
 
+        private void LimpiarCampos()
+        {
+            txtCedula.Clear();
+            txtNombre.Clear();
+            txtApellidos.Clear();
+            numTelefono.Value = 0;
+            rchDireccion.Clear();
+            cbSexo.SelectedIndex = 0;
+        }
 
+        private void PopularDGVPacientes()
+        {
+            var listaPacientes = us.ListarUsuarios();
+            listaPacientes = listaPacientes.Where(x => x.TipoUsuario == "Paciente").ToList();
+            dgvListaPacientes.DataSource = null;
+            dgvListaPacientes.DataSource = listaPacientes;
+            dgvListaPacientes.Columns[6].Visible = false;
+            dgvListaPacientes.Columns[7].Visible = false;
         }
     }
 }

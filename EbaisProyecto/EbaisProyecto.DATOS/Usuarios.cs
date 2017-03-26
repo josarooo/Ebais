@@ -20,9 +20,11 @@ namespace EbaisProyecto.DATOS
 
         public string Direccion { get; set; }
 
-        public string Usuario { get; set; }
+        public string TipoUsuario { get; set; }
 
         public string Password { get; set; }
+
+        public string Sexo { get; set; }
 
     }
 }

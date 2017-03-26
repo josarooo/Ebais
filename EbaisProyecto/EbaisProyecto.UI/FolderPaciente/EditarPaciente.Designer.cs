@@ -34,14 +34,16 @@
             this.numTelefono = new System.Windows.Forms.NumericUpDown();
             this.lbTelefono = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.txtCedula = new System.Windows.Forms.TextBox();
             this.txtApellidos = new System.Windows.Forms.TextBox();
-            this.cbSexo = new System.Windows.Forms.ComboBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.lbNombre = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.dtpFechaNacimiento = new System.Windows.Forms.DateTimePicker();
+            this.btnConfirmarEdicion = new System.Windows.Forms.Button();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.txtCedula = new System.Windows.Forms.TextBox();
+            this.cbSexo = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.numTelefono)).BeginInit();
             this.SuspendLayout();
             // 
@@ -103,14 +105,6 @@
             this.label12.TabIndex = 85;
             this.label12.Text = "Número de Cédula :";
             // 
-            // txtCedula
-            // 
-            this.txtCedula.BackColor = System.Drawing.SystemColors.Window;
-            this.txtCedula.Location = new System.Drawing.Point(139, 30);
-            this.txtCedula.Name = "txtCedula";
-            this.txtCedula.Size = new System.Drawing.Size(168, 20);
-            this.txtCedula.TabIndex = 86;
-            // 
             // txtApellidos
             // 
             this.txtApellidos.BackColor = System.Drawing.SystemColors.Window;
@@ -118,15 +112,6 @@
             this.txtApellidos.Name = "txtApellidos";
             this.txtApellidos.Size = new System.Drawing.Size(168, 20);
             this.txtApellidos.TabIndex = 90;
-            // 
-            // cbSexo
-            // 
-            this.cbSexo.BackColor = System.Drawing.SystemColors.Window;
-            this.cbSexo.FormattingEnabled = true;
-            this.cbSexo.Location = new System.Drawing.Point(186, 224);
-            this.cbSexo.Name = "cbSexo";
-            this.cbSexo.Size = new System.Drawing.Size(121, 21);
-            this.cbSexo.TabIndex = 95;
             // 
             // txtNombre
             // 
@@ -172,26 +157,73 @@
             this.dtpFechaNacimiento.Size = new System.Drawing.Size(160, 20);
             this.dtpFechaNacimiento.TabIndex = 97;
             // 
+            // btnConfirmarEdicion
+            // 
+            this.btnConfirmarEdicion.Location = new System.Drawing.Point(148, 387);
+            this.btnConfirmarEdicion.Name = "btnConfirmarEdicion";
+            this.btnConfirmarEdicion.Size = new System.Drawing.Size(75, 23);
+            this.btnConfirmarEdicion.TabIndex = 99;
+            this.btnConfirmarEdicion.Text = "Confirmar";
+            this.btnConfirmarEdicion.UseVisualStyleBackColor = true;
+            this.btnConfirmarEdicion.Click += new System.EventHandler(this.btnConfirmarEdicion_Click);
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.Location = new System.Drawing.Point(232, 387);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(75, 23);
+            this.btnCancelar.TabIndex = 100;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            // 
+            // txtCedula
+            // 
+            this.txtCedula.Location = new System.Drawing.Point(140, 30);
+            this.txtCedula.Name = "txtCedula";
+            this.txtCedula.ReadOnly = true;
+            this.txtCedula.Size = new System.Drawing.Size(168, 20);
+            this.txtCedula.TabIndex = 101;
+            // 
+            // cbSexo
+            // 
+            this.cbSexo.AutoCompleteCustomSource.AddRange(new string[] {
+            "Hombre",
+            "Mujer",
+            "Otro"});
+            this.cbSexo.BackColor = System.Drawing.SystemColors.Window;
+            this.cbSexo.FormattingEnabled = true;
+            this.cbSexo.Items.AddRange(new object[] {
+            "Hombre",
+            "Mujer",
+            "Otro"});
+            this.cbSexo.Location = new System.Drawing.Point(186, 227);
+            this.cbSexo.Name = "cbSexo";
+            this.cbSexo.Size = new System.Drawing.Size(121, 21);
+            this.cbSexo.TabIndex = 102;
+            // 
             // EditarPaciente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(203)))), ((int)(((byte)(227)))));
+            this.Controls.Add(this.cbSexo);
+            this.Controls.Add(this.txtCedula);
+            this.Controls.Add(this.btnCancelar);
+            this.Controls.Add(this.btnConfirmarEdicion);
             this.Controls.Add(this.rchDireccion);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.numTelefono);
             this.Controls.Add(this.lbTelefono);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.txtCedula);
             this.Controls.Add(this.txtApellidos);
-            this.Controls.Add(this.cbSexo);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.lbNombre);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.dtpFechaNacimiento);
             this.Name = "EditarPaciente";
-            this.Size = new System.Drawing.Size(353, 409);
+            this.Size = new System.Drawing.Size(353, 438);
             ((System.ComponentModel.ISupportInitialize)(this.numTelefono)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -206,12 +238,14 @@
         private System.Windows.Forms.Label lbNombre;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label7;
-        public System.Windows.Forms.TextBox txtCedula;
         public System.Windows.Forms.RichTextBox rchDireccion;
         public System.Windows.Forms.NumericUpDown numTelefono;
         public System.Windows.Forms.TextBox txtApellidos;
-        public System.Windows.Forms.ComboBox cbSexo;
         public System.Windows.Forms.TextBox txtNombre;
         public System.Windows.Forms.DateTimePicker dtpFechaNacimiento;
+        private System.Windows.Forms.Button btnConfirmarEdicion;
+        private System.Windows.Forms.Button btnCancelar;
+        public System.Windows.Forms.TextBox txtCedula;
+        public System.Windows.Forms.ComboBox cbSexo;
     }
 }

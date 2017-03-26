@@ -9,3 +9,9 @@ C:\Users\josaro\Desktop\EbaisProyectoConLogin\EbaisProyectoConLogin\EbaisProyect
 C:\Users\josaro\Desktop\EbaisProyectoConLogin\EbaisProyectoConLogin\EbaisProyecto\EbaisProyecto.DATOS\bin\Debug\ServiceStack.Interfaces.dll
 C:\Users\josaro\Desktop\EbaisProyectoConLogin\EbaisProyectoConLogin\EbaisProyecto\EbaisProyecto.DATOS\obj\Debug\EbaisProyecto.DATOS.dll
 C:\Users\josaro\Desktop\EbaisProyectoConLogin\EbaisProyectoConLogin\EbaisProyecto\EbaisProyecto.DATOS\obj\Debug\EbaisProyecto.DATOS.pdb
+C:\Users\josaro\Desktop\GitHub\EbaisProyecto\EbaisProyecto.DATOS\bin\Debug\EbaisProyecto.DATOS.dll
+C:\Users\josaro\Desktop\GitHub\EbaisProyecto\EbaisProyecto.DATOS\bin\Debug\EbaisProyecto.DATOS.pdb
+C:\Users\josaro\Desktop\GitHub\EbaisProyecto\EbaisProyecto.DATOS\bin\Debug\ServiceStack.Interfaces.dll
+C:\Users\josaro\Desktop\GitHub\EbaisProyecto\EbaisProyecto.DATOS\obj\Debug\EbaisProyecto.DATOS.csprojResolveAssemblyReference.cache
+C:\Users\josaro\Desktop\GitHub\EbaisProyecto\EbaisProyecto.DATOS\obj\Debug\EbaisProyecto.DATOS.dll
+C:\Users\josaro\Desktop\GitHub\EbaisProyecto\EbaisProyecto.DATOS\obj\Debug\EbaisProyecto.DATOS.pdb

@@ -27,24 +27,19 @@ namespace EbaisProyecto.DAL.Clases
 
         }
 
-        public void ActualizarCuenta(Usuarios usuario)
+        public void ActualizarUsuario(Usuarios usuario)
         {
-            throw new NotImplementedException();
+            _db.Update(usuario);
         }
 
-        public Usuarios BuscarCuenta(int cedula)
+        public Usuarios BuscarUsuario(int cedula)
         {
-            throw new NotImplementedException();
+            return _db.Select<Usuarios>(x => x.Cedula == cedula).FirstOrDefault();
         }
 
-        public void EliminarCuenta(int cedula)
+        public void EliminarUsuario(int cedula)
         {
-            throw new NotImplementedException();
-        }
-
-        public void InsertarCuenta(Usuarios usuario)
-        {
-            throw new NotImplementedException();
+            _db.Delete<Usuarios>(x => x.Cedula == cedula);
         }
 
         public void InsertarUsuario(Usuarios usuario)
@@ -56,5 +51,10 @@ namespace EbaisProyecto.DAL.Clases
         {
             return _db.Select<Usuarios>();
         }
+
+     
+
+
+
     }
 }
