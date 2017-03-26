@@ -58,7 +58,6 @@
             this.label12 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.dgvListaMedicamentosDos = new System.Windows.Forms.DataGridView();
             this.tabControlMedicamentos.SuspendLayout();
@@ -304,12 +303,11 @@
             // 
             // tabPageConsultaMedicamentos
             // 
-            this.tabPageConsultaMedicamentos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
+            this.tabPageConsultaMedicamentos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(203)))), ((int)(((byte)(227)))));
             this.tabPageConsultaMedicamentos.Controls.Add(this.btnBuscarB);
             this.tabPageConsultaMedicamentos.Controls.Add(this.label12);
             this.tabPageConsultaMedicamentos.Controls.Add(this.textBox1);
             this.tabPageConsultaMedicamentos.Controls.Add(this.label13);
-            this.tabPageConsultaMedicamentos.Controls.Add(this.label2);
             this.tabPageConsultaMedicamentos.Controls.Add(this.btnEliminar);
             this.tabPageConsultaMedicamentos.Controls.Add(this.dgvListaMedicamentosDos);
             this.tabPageConsultaMedicamentos.Location = new System.Drawing.Point(4, 22);
@@ -352,16 +350,6 @@
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(0, 13);
             this.label13.TabIndex = 69;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.label2.Location = new System.Drawing.Point(-1, 476);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(208, 13);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "                                                                   ";
             // 
             // btnEliminar
             // 
@@ -434,7 +422,6 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.DataGridView dgvListaMedicamentosDos;
     }

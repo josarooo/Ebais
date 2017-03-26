@@ -46,7 +46,6 @@
             this.label25 = new System.Windows.Forms.Label();
             this.tabControlMedicamentos = new System.Windows.Forms.TabControl();
             this.tabPageConsultaMedicamentos = new System.Windows.Forms.TabPage();
-            this.label2 = new System.Windows.Forms.Label();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.dgvListaMedicamentosDos = new System.Windows.Forms.DataGridView();
@@ -232,8 +231,7 @@
             // 
             // tabPageConsultaMedicamentos
             // 
-            this.tabPageConsultaMedicamentos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
-            this.tabPageConsultaMedicamentos.Controls.Add(this.label2);
+            this.tabPageConsultaMedicamentos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(203)))), ((int)(((byte)(227)))));
             this.tabPageConsultaMedicamentos.Controls.Add(this.btnEditar);
             this.tabPageConsultaMedicamentos.Controls.Add(this.btnEliminar);
             this.tabPageConsultaMedicamentos.Controls.Add(this.dgvListaMedicamentosDos);
@@ -250,16 +248,6 @@
             this.tabPageConsultaMedicamentos.TabIndex = 2;
             this.tabPageConsultaMedicamentos.Text = "Consulta y edición";
             this.tabPageConsultaMedicamentos.Click += new System.EventHandler(this.tabPageConsultaMedicamentos_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.label2.Location = new System.Drawing.Point(-1, 476);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(208, 13);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "                                                                   ";
             // 
             // btnEditar
             // 
@@ -387,7 +375,6 @@
         private System.Windows.Forms.TextBox txtNombreB;
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.RichTextBox rchtDescripcion;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;

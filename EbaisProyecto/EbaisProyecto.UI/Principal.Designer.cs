@@ -335,6 +335,7 @@
             // 
             // diagnostico1
             // 
+            this.diagnostico1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(203)))), ((int)(((byte)(227)))));
             this.diagnostico1.Location = new System.Drawing.Point(0, 3);
             this.diagnostico1.Margin = new System.Windows.Forms.Padding(4);
             this.diagnostico1.Name = "diagnostico1";
@@ -377,7 +378,7 @@
             // 
             // inicio1
             // 
-            this.inicio1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
+            this.inicio1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(203)))), ((int)(((byte)(227)))));
             this.inicio1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.inicio1.Location = new System.Drawing.Point(0, -3);
             this.inicio1.Margin = new System.Windows.Forms.Padding(4);
@@ -389,8 +390,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(203)))), ((int)(((byte)(227)))));
             this.ClientSize = new System.Drawing.Size(784, 561);
+            this.Controls.Add(this.pnlInicio);
             this.Controls.Add(this.pnlPadecimiento);
             this.Controls.Add(this.pnlCita);
             this.Controls.Add(this.pnlExpediente);
@@ -399,7 +401,6 @@
             this.Controls.Add(this.pnlUsuarios);
             this.Controls.Add(this.pnlPaciente);
             this.Controls.Add(this.pnlFarmacia);
-            this.Controls.Add(this.pnlInicio);
             this.Controls.Add(this.menuStrOpciones);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Principal";

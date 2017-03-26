@@ -54,7 +54,6 @@
             this.dtpFechaNacimiento = new System.Windows.Forms.DateTimePicker();
             this.tabPageConsultaMedicamentos = new System.Windows.Forms.TabPage();
             this.button2 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.dgvListaMedicamentosDos = new System.Windows.Forms.DataGridView();
@@ -308,9 +307,8 @@
             // 
             // tabPageConsultaMedicamentos
             // 
-            this.tabPageConsultaMedicamentos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
+            this.tabPageConsultaMedicamentos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(203)))), ((int)(((byte)(227)))));
             this.tabPageConsultaMedicamentos.Controls.Add(this.button2);
-            this.tabPageConsultaMedicamentos.Controls.Add(this.label2);
             this.tabPageConsultaMedicamentos.Controls.Add(this.btnEditar);
             this.tabPageConsultaMedicamentos.Controls.Add(this.btnEliminar);
             this.tabPageConsultaMedicamentos.Controls.Add(this.dgvListaMedicamentosDos);
@@ -333,16 +331,6 @@
             this.button2.TabIndex = 13;
             this.button2.Text = "Ver";
             this.button2.UseVisualStyleBackColor = false;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.label2.Location = new System.Drawing.Point(-1, 476);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(208, 13);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "                                                                   ";
             // 
             // btnEditar
             // 
@@ -423,7 +411,6 @@
         private System.Windows.Forms.TabPage tabPagePadecimientos;
         private System.Windows.Forms.TabPage tabPageConsultaMedicamentos;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.DataGridView dgvListaMedicamentosDos;

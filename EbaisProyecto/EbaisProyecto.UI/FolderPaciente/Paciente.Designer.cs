@@ -47,7 +47,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.dtpFechaNacimiento = new System.Windows.Forms.DateTimePicker();
-            this.label6 = new System.Windows.Forms.Label();
             this.tabPageConsultaMedicamentos = new System.Windows.Forms.TabPage();
             this.button2 = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
@@ -79,7 +78,7 @@
             // 
             // tabPagePadecimientos
             // 
-            this.tabPagePadecimientos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
+            this.tabPagePadecimientos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(203)))), ((int)(((byte)(227)))));
             this.tabPagePadecimientos.Controls.Add(this.btnGuardar);
             this.tabPagePadecimientos.Controls.Add(this.rchDireccion);
             this.tabPagePadecimientos.Controls.Add(this.btnLimpiar);
@@ -96,7 +95,6 @@
             this.tabPagePadecimientos.Controls.Add(this.label3);
             this.tabPagePadecimientos.Controls.Add(this.label7);
             this.tabPagePadecimientos.Controls.Add(this.dtpFechaNacimiento);
-            this.tabPagePadecimientos.Controls.Add(this.label6);
             this.tabPagePadecimientos.Location = new System.Drawing.Point(4, 22);
             this.tabPagePadecimientos.Name = "tabPagePadecimientos";
             this.tabPagePadecimientos.Padding = new System.Windows.Forms.Padding(3);
@@ -251,16 +249,6 @@
             this.dtpFechaNacimiento.Size = new System.Drawing.Size(160, 20);
             this.dtpFechaNacimiento.TabIndex = 82;
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.label6.Location = new System.Drawing.Point(-1, 476);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(208, 13);
-            this.label6.TabIndex = 66;
-            this.label6.Text = "                                                                   ";
-            // 
             // tabPageConsultaMedicamentos
             // 
             this.tabPageConsultaMedicamentos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(203)))), ((int)(((byte)(227)))));
@@ -351,9 +339,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 110);
+            this.pictureBox1.Location = new System.Drawing.Point(6, 107);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(713, 397);
+            this.pictureBox1.Size = new System.Drawing.Size(774, 396);
             this.pictureBox1.TabIndex = 14;
             this.pictureBox1.TabStop = false;
             // 
@@ -398,7 +386,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.DateTimePicker dtpFechaNacimiento;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TabPage tabPageConsultaMedicamentos;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnEditar;
