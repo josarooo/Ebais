@@ -1,0 +1,3 @@
+Karen -> Farmacia: Medicamentos, Padecimientos: padecimientos.
+Jos ->  Citas, diagnostico
+Yo -> Expediente, preconsulta
