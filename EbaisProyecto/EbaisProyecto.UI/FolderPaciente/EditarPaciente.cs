@@ -37,7 +37,7 @@ namespace EbaisProyecto.UI.FolderPaciente
                     Sexo = cbSexo.SelectedItem.ToString()
                 };
 
-                IUsuario usu = new MUsuario();
+                IUsuarios usu = new MUsuarios();
                 usu.ActualizarUsuario(usuario);
                 
                 MessageBox.Show("La información del paciente se ha actualizado correctamente.");

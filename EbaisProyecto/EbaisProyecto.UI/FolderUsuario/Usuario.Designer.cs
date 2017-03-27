@@ -30,28 +30,18 @@
         {
             this.tabControlMedicamentos = new System.Windows.Forms.TabControl();
             this.tabPagePadecimientos = new System.Windows.Forms.TabPage();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.btnGuardar = new System.Windows.Forms.Button();
-            this.rchDireccion = new System.Windows.Forms.RichTextBox();
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.numTelefono = new System.Windows.Forms.NumericUpDown();
             this.lbTelefono = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.txtCedula = new System.Windows.Forms.TextBox();
-            this.txtApellidos = new System.Windows.Forms.TextBox();
-            this.cbSexo = new System.Windows.Forms.ComboBox();
-            this.txtNombre = new System.Windows.Forms.TextBox();
             this.lbNombre = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.dtpFechaNacimiento = new System.Windows.Forms.DateTimePicker();
             this.tabPageConsultaMedicamentos = new System.Windows.Forms.TabPage();
             this.button2 = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
@@ -60,9 +50,18 @@
             this.btnBuscarId = new System.Windows.Forms.Button();
             this.txtNombreB = new System.Windows.Forms.TextBox();
             this.label35 = new System.Windows.Forms.Label();
+            this.txtNumero = new System.Windows.Forms.TextBox();
+            this.cbTipoUsuario = new System.Windows.Forms.ComboBox();
+            this.mtbConfirmarPass = new System.Windows.Forms.MaskedTextBox();
+            this.mtbPass = new System.Windows.Forms.MaskedTextBox();
+            this.rchDireccion = new System.Windows.Forms.RichTextBox();
+            this.txtCedula = new System.Windows.Forms.TextBox();
+            this.txtApellidos = new System.Windows.Forms.TextBox();
+            this.cbSexo = new System.Windows.Forms.ComboBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.dtpFechaNacimiento = new System.Windows.Forms.DateTimePicker();
             this.tabControlMedicamentos.SuspendLayout();
             this.tabPagePadecimientos.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numTelefono)).BeginInit();
             this.tabPageConsultaMedicamentos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListaMedicamentosDos)).BeginInit();
             this.SuspendLayout();
@@ -82,41 +81,34 @@
             // tabPagePadecimientos
             // 
             this.tabPagePadecimientos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(203)))), ((int)(((byte)(227)))));
-            this.tabPagePadecimientos.Controls.Add(this.maskedTextBox2);
-            this.tabPagePadecimientos.Controls.Add(this.label10);
-            this.tabPagePadecimientos.Controls.Add(this.maskedTextBox1);
-            this.tabPagePadecimientos.Controls.Add(this.label9);
-            this.tabPagePadecimientos.Controls.Add(this.textBox1);
-            this.tabPagePadecimientos.Controls.Add(this.label8);
-            this.tabPagePadecimientos.Controls.Add(this.btnGuardar);
+            this.tabPagePadecimientos.Controls.Add(this.txtNumero);
+            this.tabPagePadecimientos.Controls.Add(this.cbTipoUsuario);
+            this.tabPagePadecimientos.Controls.Add(this.mtbConfirmarPass);
+            this.tabPagePadecimientos.Controls.Add(this.mtbPass);
             this.tabPagePadecimientos.Controls.Add(this.rchDireccion);
-            this.tabPagePadecimientos.Controls.Add(this.btnLimpiar);
-            this.tabPagePadecimientos.Controls.Add(this.label1);
-            this.tabPagePadecimientos.Controls.Add(this.label4);
-            this.tabPagePadecimientos.Controls.Add(this.numTelefono);
-            this.tabPagePadecimientos.Controls.Add(this.lbTelefono);
-            this.tabPagePadecimientos.Controls.Add(this.label12);
             this.tabPagePadecimientos.Controls.Add(this.txtCedula);
             this.tabPagePadecimientos.Controls.Add(this.txtApellidos);
             this.tabPagePadecimientos.Controls.Add(this.cbSexo);
             this.tabPagePadecimientos.Controls.Add(this.txtNombre);
+            this.tabPagePadecimientos.Controls.Add(this.dtpFechaNacimiento);
+            this.tabPagePadecimientos.Controls.Add(this.label10);
+            this.tabPagePadecimientos.Controls.Add(this.label9);
+            this.tabPagePadecimientos.Controls.Add(this.label8);
+            this.tabPagePadecimientos.Controls.Add(this.btnGuardar);
+            this.tabPagePadecimientos.Controls.Add(this.btnLimpiar);
+            this.tabPagePadecimientos.Controls.Add(this.label1);
+            this.tabPagePadecimientos.Controls.Add(this.label4);
+            this.tabPagePadecimientos.Controls.Add(this.lbTelefono);
+            this.tabPagePadecimientos.Controls.Add(this.label12);
             this.tabPagePadecimientos.Controls.Add(this.lbNombre);
             this.tabPagePadecimientos.Controls.Add(this.label3);
             this.tabPagePadecimientos.Controls.Add(this.label7);
-            this.tabPagePadecimientos.Controls.Add(this.dtpFechaNacimiento);
             this.tabPagePadecimientos.Location = new System.Drawing.Point(4, 22);
             this.tabPagePadecimientos.Name = "tabPagePadecimientos";
             this.tabPagePadecimientos.Padding = new System.Windows.Forms.Padding(3);
             this.tabPagePadecimientos.Size = new System.Drawing.Size(776, 503);
             this.tabPagePadecimientos.TabIndex = 0;
             this.tabPagePadecimientos.Text = "Agregar Usuario";
-            // 
-            // maskedTextBox2
-            // 
-            this.maskedTextBox2.Location = new System.Drawing.Point(497, 369);
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(100, 20);
-            this.maskedTextBox2.TabIndex = 91;
             // 
             // label10
             // 
@@ -127,13 +119,6 @@
             this.label10.TabIndex = 90;
             this.label10.Text = "Confirmar password:";
             // 
-            // maskedTextBox1
-            // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(248, 369);
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(100, 20);
-            this.maskedTextBox1.TabIndex = 89;
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -142,13 +127,6 @@
             this.label9.Size = new System.Drawing.Size(56, 13);
             this.label9.TabIndex = 88;
             this.label9.Text = "Password:";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(248, 321);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 87;
             // 
             // label8
             // 
@@ -170,15 +148,7 @@
             this.btnGuardar.TabIndex = 85;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = false;
-            // 
-            // rchDireccion
-            // 
-            this.rchDireccion.Location = new System.Drawing.Point(248, 264);
-            this.rchDireccion.Margin = new System.Windows.Forms.Padding(2);
-            this.rchDireccion.Name = "rchDireccion";
-            this.rchDireccion.Size = new System.Drawing.Size(343, 28);
-            this.rchDireccion.TabIndex = 84;
-            this.rchDireccion.Text = "";
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // btnLimpiar
             // 
@@ -210,14 +180,6 @@
             this.label4.TabIndex = 79;
             this.label4.Text = "Sexo :";
             // 
-            // numTelefono
-            // 
-            this.numTelefono.BackColor = System.Drawing.SystemColors.Window;
-            this.numTelefono.Location = new System.Drawing.Point(248, 190);
-            this.numTelefono.Name = "numTelefono";
-            this.numTelefono.Size = new System.Drawing.Size(159, 20);
-            this.numTelefono.TabIndex = 77;
-            // 
             // lbTelefono
             // 
             this.lbTelefono.AutoSize = true;
@@ -235,39 +197,6 @@
             this.label12.Size = new System.Drawing.Size(101, 13);
             this.label12.TabIndex = 69;
             this.label12.Text = "Número de Cédula :";
-            // 
-            // txtCedula
-            // 
-            this.txtCedula.BackColor = System.Drawing.SystemColors.Window;
-            this.txtCedula.Location = new System.Drawing.Point(248, 41);
-            this.txtCedula.Name = "txtCedula";
-            this.txtCedula.Size = new System.Drawing.Size(217, 20);
-            this.txtCedula.TabIndex = 70;
-            // 
-            // txtApellidos
-            // 
-            this.txtApellidos.BackColor = System.Drawing.SystemColors.Window;
-            this.txtApellidos.Location = new System.Drawing.Point(248, 139);
-            this.txtApellidos.Name = "txtApellidos";
-            this.txtApellidos.Size = new System.Drawing.Size(343, 20);
-            this.txtApellidos.TabIndex = 75;
-            // 
-            // cbSexo
-            // 
-            this.cbSexo.BackColor = System.Drawing.SystemColors.Window;
-            this.cbSexo.FormattingEnabled = true;
-            this.cbSexo.Location = new System.Drawing.Point(470, 190);
-            this.cbSexo.Name = "cbSexo";
-            this.cbSexo.Size = new System.Drawing.Size(121, 21);
-            this.cbSexo.TabIndex = 80;
-            // 
-            // txtNombre
-            // 
-            this.txtNombre.BackColor = System.Drawing.SystemColors.Window;
-            this.txtNombre.Location = new System.Drawing.Point(248, 91);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(308, 20);
-            this.txtNombre.TabIndex = 74;
             // 
             // lbNombre
             // 
@@ -295,15 +224,6 @@
             this.label7.Size = new System.Drawing.Size(99, 13);
             this.label7.TabIndex = 81;
             this.label7.Text = "Fecha Nacimiento :";
-            // 
-            // dtpFechaNacimiento
-            // 
-            this.dtpFechaNacimiento.CalendarMonthBackground = System.Drawing.SystemColors.Control;
-            this.dtpFechaNacimiento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFechaNacimiento.Location = new System.Drawing.Point(248, 227);
-            this.dtpFechaNacimiento.Name = "dtpFechaNacimiento";
-            this.dtpFechaNacimiento.Size = new System.Drawing.Size(160, 20);
-            this.dtpFechaNacimiento.TabIndex = 82;
             // 
             // tabPageConsultaMedicamentos
             // 
@@ -370,6 +290,7 @@
             this.btnBuscarId.TabIndex = 4;
             this.btnBuscarId.Text = "Buscar";
             this.btnBuscarId.UseVisualStyleBackColor = false;
+            this.btnBuscarId.Click += new System.EventHandler(this.btnBuscarId_Click);
             // 
             // txtNombreB
             // 
@@ -387,6 +308,97 @@
             this.label35.TabIndex = 0;
             this.label35.Text = "Cédula de usuario:";
             // 
+            // txtNumero
+            // 
+            this.txtNumero.BackColor = System.Drawing.SystemColors.Window;
+            this.txtNumero.Location = new System.Drawing.Point(249, 189);
+            this.txtNumero.Name = "txtNumero";
+            this.txtNumero.Size = new System.Drawing.Size(161, 20);
+            this.txtNumero.TabIndex = 94;
+            // 
+            // cbTipoUsuario
+            // 
+            this.cbTipoUsuario.BackColor = System.Drawing.SystemColors.Window;
+            this.cbTipoUsuario.FormattingEnabled = true;
+            this.cbTipoUsuario.Items.AddRange(new object[] {
+            "Doctor",
+            "Paciente",
+            "Administrador"});
+            this.cbTipoUsuario.Location = new System.Drawing.Point(250, 320);
+            this.cbTipoUsuario.Name = "cbTipoUsuario";
+            this.cbTipoUsuario.Size = new System.Drawing.Size(121, 21);
+            this.cbTipoUsuario.TabIndex = 98;
+            // 
+            // mtbConfirmarPass
+            // 
+            this.mtbConfirmarPass.Location = new System.Drawing.Point(499, 368);
+            this.mtbConfirmarPass.Name = "mtbConfirmarPass";
+            this.mtbConfirmarPass.PasswordChar = '*';
+            this.mtbConfirmarPass.Size = new System.Drawing.Size(100, 20);
+            this.mtbConfirmarPass.TabIndex = 100;
+            // 
+            // mtbPass
+            // 
+            this.mtbPass.Location = new System.Drawing.Point(250, 368);
+            this.mtbPass.Name = "mtbPass";
+            this.mtbPass.PasswordChar = '*';
+            this.mtbPass.Size = new System.Drawing.Size(100, 20);
+            this.mtbPass.TabIndex = 99;
+            // 
+            // rchDireccion
+            // 
+            this.rchDireccion.Location = new System.Drawing.Point(250, 263);
+            this.rchDireccion.Margin = new System.Windows.Forms.Padding(2);
+            this.rchDireccion.Name = "rchDireccion";
+            this.rchDireccion.Size = new System.Drawing.Size(343, 28);
+            this.rchDireccion.TabIndex = 97;
+            this.rchDireccion.Text = "";
+            // 
+            // txtCedula
+            // 
+            this.txtCedula.BackColor = System.Drawing.SystemColors.Window;
+            this.txtCedula.Location = new System.Drawing.Point(250, 40);
+            this.txtCedula.Name = "txtCedula";
+            this.txtCedula.Size = new System.Drawing.Size(217, 20);
+            this.txtCedula.TabIndex = 91;
+            // 
+            // txtApellidos
+            // 
+            this.txtApellidos.BackColor = System.Drawing.SystemColors.Window;
+            this.txtApellidos.Location = new System.Drawing.Point(250, 138);
+            this.txtApellidos.Name = "txtApellidos";
+            this.txtApellidos.Size = new System.Drawing.Size(343, 20);
+            this.txtApellidos.TabIndex = 93;
+            // 
+            // cbSexo
+            // 
+            this.cbSexo.BackColor = System.Drawing.SystemColors.Window;
+            this.cbSexo.FormattingEnabled = true;
+            this.cbSexo.Items.AddRange(new object[] {
+            "Hombre",
+            "Mujer"});
+            this.cbSexo.Location = new System.Drawing.Point(472, 189);
+            this.cbSexo.Name = "cbSexo";
+            this.cbSexo.Size = new System.Drawing.Size(121, 21);
+            this.cbSexo.TabIndex = 95;
+            // 
+            // txtNombre
+            // 
+            this.txtNombre.BackColor = System.Drawing.SystemColors.Window;
+            this.txtNombre.Location = new System.Drawing.Point(250, 90);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(308, 20);
+            this.txtNombre.TabIndex = 92;
+            // 
+            // dtpFechaNacimiento
+            // 
+            this.dtpFechaNacimiento.CalendarMonthBackground = System.Drawing.SystemColors.Control;
+            this.dtpFechaNacimiento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFechaNacimiento.Location = new System.Drawing.Point(250, 226);
+            this.dtpFechaNacimiento.Name = "dtpFechaNacimiento";
+            this.dtpFechaNacimiento.Size = new System.Drawing.Size(160, 20);
+            this.dtpFechaNacimiento.TabIndex = 96;
+            // 
             // Usuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -397,7 +409,6 @@
             this.tabControlMedicamentos.ResumeLayout(false);
             this.tabPagePadecimientos.ResumeLayout(false);
             this.tabPagePadecimientos.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numTelefono)).EndInit();
             this.tabPageConsultaMedicamentos.ResumeLayout(false);
             this.tabPageConsultaMedicamentos.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListaMedicamentosDos)).EndInit();
@@ -418,26 +429,26 @@
         private System.Windows.Forms.TextBox txtNombreB;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Button btnGuardar;
-        private System.Windows.Forms.RichTextBox rchDireccion;
         private System.Windows.Forms.Button btnLimpiar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.NumericUpDown numTelefono;
         private System.Windows.Forms.Label lbTelefono;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label lbNombre;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox txtNumero;
+        private System.Windows.Forms.ComboBox cbTipoUsuario;
+        private System.Windows.Forms.MaskedTextBox mtbConfirmarPass;
+        private System.Windows.Forms.MaskedTextBox mtbPass;
+        private System.Windows.Forms.RichTextBox rchDireccion;
         private System.Windows.Forms.TextBox txtCedula;
         private System.Windows.Forms.TextBox txtApellidos;
         private System.Windows.Forms.ComboBox cbSexo;
         private System.Windows.Forms.TextBox txtNombre;
-        private System.Windows.Forms.Label lbNombre;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.DateTimePicker dtpFechaNacimiento;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label8;
     }
 }

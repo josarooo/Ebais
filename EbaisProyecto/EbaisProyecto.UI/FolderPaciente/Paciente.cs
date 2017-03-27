@@ -17,7 +17,7 @@ namespace EbaisProyecto.UI
 {
     public partial class Paciente : UserControl
     {
-        IUsuario us = new MUsuario();
+        IUsuarios us = new MUsuarios();
 
 
         public Paciente()

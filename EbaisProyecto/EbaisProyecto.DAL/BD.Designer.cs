@@ -26,7 +26,7 @@ namespace EbaisProyecto.DAL {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-J6B4SOR;Initial Catalog=Ebais;Integrated Security=True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.;Initial Catalog=Ebais;Integrated Security=True")]
         public string conexion {
             get {
                 return ((string)(this["conexion"]));
