@@ -29,6 +29,11 @@ namespace EbaisProyecto.DAL.Clases
             _db.Update(usuario);
         }
 
+        public Usuarios BuscarPorNombre(string nombre)
+        {
+            return _db.Select<Usuarios>(x => x.Nombre == nombre).FirstOrDefault();
+        }
+
         public Usuarios BuscarUsuario(int cedula)
         {
             return _db.Select<Usuarios>(x => x.Cedula == cedula).FirstOrDefault();

@@ -72,5 +72,14 @@ namespace EbaisProyecto.UI
                 MessageBox.Show("Ha ocurrido un error " + ex.Data);
             }
         }
+
+        private void txtNombreB_TextChanged(object sender, EventArgs e)
+        {
+            //IUsuarios usu = new MUsuarios();
+            //var usuario = usu.BuscarPorNombre(txtNombreB.Text);
+            //List<Usuarios> Lista  = new List<Usuarios> { usuario };
+            //var filtro = from Usuarios in Lista where usuario.Nombre.ToUpper().Contains(txtNombreB.Text.ToUpper()) select usuario;
+            //this.dgvListaMedicamentosDos.DataSource = filtro.ToList<Usuarios>();
+        }
     }
 }

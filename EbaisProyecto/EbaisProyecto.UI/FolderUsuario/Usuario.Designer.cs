@@ -30,6 +30,16 @@
         {
             this.tabControlMedicamentos = new System.Windows.Forms.TabControl();
             this.tabPagePadecimientos = new System.Windows.Forms.TabPage();
+            this.txtNumero = new System.Windows.Forms.TextBox();
+            this.cbTipoUsuario = new System.Windows.Forms.ComboBox();
+            this.mtbConfirmarPass = new System.Windows.Forms.MaskedTextBox();
+            this.mtbPass = new System.Windows.Forms.MaskedTextBox();
+            this.rchDireccion = new System.Windows.Forms.RichTextBox();
+            this.txtCedula = new System.Windows.Forms.TextBox();
+            this.txtApellidos = new System.Windows.Forms.TextBox();
+            this.cbSexo = new System.Windows.Forms.ComboBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.dtpFechaNacimiento = new System.Windows.Forms.DateTimePicker();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -50,16 +60,6 @@
             this.btnBuscarId = new System.Windows.Forms.Button();
             this.txtNombreB = new System.Windows.Forms.TextBox();
             this.label35 = new System.Windows.Forms.Label();
-            this.txtNumero = new System.Windows.Forms.TextBox();
-            this.cbTipoUsuario = new System.Windows.Forms.ComboBox();
-            this.mtbConfirmarPass = new System.Windows.Forms.MaskedTextBox();
-            this.mtbPass = new System.Windows.Forms.MaskedTextBox();
-            this.rchDireccion = new System.Windows.Forms.RichTextBox();
-            this.txtCedula = new System.Windows.Forms.TextBox();
-            this.txtApellidos = new System.Windows.Forms.TextBox();
-            this.cbSexo = new System.Windows.Forms.ComboBox();
-            this.txtNombre = new System.Windows.Forms.TextBox();
-            this.dtpFechaNacimiento = new System.Windows.Forms.DateTimePicker();
             this.tabControlMedicamentos.SuspendLayout();
             this.tabPagePadecimientos.SuspendLayout();
             this.tabPageConsultaMedicamentos.SuspendLayout();
@@ -109,6 +109,97 @@
             this.tabPagePadecimientos.Size = new System.Drawing.Size(776, 503);
             this.tabPagePadecimientos.TabIndex = 0;
             this.tabPagePadecimientos.Text = "Agregar Usuario";
+            // 
+            // txtNumero
+            // 
+            this.txtNumero.BackColor = System.Drawing.SystemColors.Window;
+            this.txtNumero.Location = new System.Drawing.Point(249, 189);
+            this.txtNumero.Name = "txtNumero";
+            this.txtNumero.Size = new System.Drawing.Size(161, 20);
+            this.txtNumero.TabIndex = 94;
+            // 
+            // cbTipoUsuario
+            // 
+            this.cbTipoUsuario.BackColor = System.Drawing.SystemColors.Window;
+            this.cbTipoUsuario.FormattingEnabled = true;
+            this.cbTipoUsuario.Items.AddRange(new object[] {
+            "Doctor",
+            "Paciente",
+            "Administrador"});
+            this.cbTipoUsuario.Location = new System.Drawing.Point(250, 320);
+            this.cbTipoUsuario.Name = "cbTipoUsuario";
+            this.cbTipoUsuario.Size = new System.Drawing.Size(121, 21);
+            this.cbTipoUsuario.TabIndex = 98;
+            // 
+            // mtbConfirmarPass
+            // 
+            this.mtbConfirmarPass.Location = new System.Drawing.Point(499, 368);
+            this.mtbConfirmarPass.Name = "mtbConfirmarPass";
+            this.mtbConfirmarPass.PasswordChar = '*';
+            this.mtbConfirmarPass.Size = new System.Drawing.Size(100, 20);
+            this.mtbConfirmarPass.TabIndex = 100;
+            // 
+            // mtbPass
+            // 
+            this.mtbPass.Location = new System.Drawing.Point(250, 368);
+            this.mtbPass.Name = "mtbPass";
+            this.mtbPass.PasswordChar = '*';
+            this.mtbPass.Size = new System.Drawing.Size(100, 20);
+            this.mtbPass.TabIndex = 99;
+            // 
+            // rchDireccion
+            // 
+            this.rchDireccion.Location = new System.Drawing.Point(250, 263);
+            this.rchDireccion.Margin = new System.Windows.Forms.Padding(2);
+            this.rchDireccion.Name = "rchDireccion";
+            this.rchDireccion.Size = new System.Drawing.Size(343, 28);
+            this.rchDireccion.TabIndex = 97;
+            this.rchDireccion.Text = "";
+            // 
+            // txtCedula
+            // 
+            this.txtCedula.BackColor = System.Drawing.SystemColors.Window;
+            this.txtCedula.Location = new System.Drawing.Point(250, 40);
+            this.txtCedula.Name = "txtCedula";
+            this.txtCedula.Size = new System.Drawing.Size(217, 20);
+            this.txtCedula.TabIndex = 91;
+            // 
+            // txtApellidos
+            // 
+            this.txtApellidos.BackColor = System.Drawing.SystemColors.Window;
+            this.txtApellidos.Location = new System.Drawing.Point(250, 138);
+            this.txtApellidos.Name = "txtApellidos";
+            this.txtApellidos.Size = new System.Drawing.Size(343, 20);
+            this.txtApellidos.TabIndex = 93;
+            // 
+            // cbSexo
+            // 
+            this.cbSexo.BackColor = System.Drawing.SystemColors.Window;
+            this.cbSexo.FormattingEnabled = true;
+            this.cbSexo.Items.AddRange(new object[] {
+            "Hombre",
+            "Mujer"});
+            this.cbSexo.Location = new System.Drawing.Point(472, 189);
+            this.cbSexo.Name = "cbSexo";
+            this.cbSexo.Size = new System.Drawing.Size(121, 21);
+            this.cbSexo.TabIndex = 95;
+            // 
+            // txtNombre
+            // 
+            this.txtNombre.BackColor = System.Drawing.SystemColors.Window;
+            this.txtNombre.Location = new System.Drawing.Point(250, 90);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(308, 20);
+            this.txtNombre.TabIndex = 92;
+            // 
+            // dtpFechaNacimiento
+            // 
+            this.dtpFechaNacimiento.CalendarMonthBackground = System.Drawing.SystemColors.Control;
+            this.dtpFechaNacimiento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFechaNacimiento.Location = new System.Drawing.Point(250, 226);
+            this.dtpFechaNacimiento.Name = "dtpFechaNacimiento";
+            this.dtpFechaNacimiento.Size = new System.Drawing.Size(160, 20);
+            this.dtpFechaNacimiento.TabIndex = 96;
             // 
             // label10
             // 
@@ -298,6 +389,7 @@
             this.txtNombreB.Name = "txtNombreB";
             this.txtNombreB.Size = new System.Drawing.Size(213, 20);
             this.txtNombreB.TabIndex = 2;
+            this.txtNombreB.TextChanged += new System.EventHandler(this.txtNombreB_TextChanged);
             // 
             // label35
             // 
@@ -307,97 +399,6 @@
             this.label35.Size = new System.Drawing.Size(95, 13);
             this.label35.TabIndex = 0;
             this.label35.Text = "Cédula de usuario:";
-            // 
-            // txtNumero
-            // 
-            this.txtNumero.BackColor = System.Drawing.SystemColors.Window;
-            this.txtNumero.Location = new System.Drawing.Point(249, 189);
-            this.txtNumero.Name = "txtNumero";
-            this.txtNumero.Size = new System.Drawing.Size(161, 20);
-            this.txtNumero.TabIndex = 94;
-            // 
-            // cbTipoUsuario
-            // 
-            this.cbTipoUsuario.BackColor = System.Drawing.SystemColors.Window;
-            this.cbTipoUsuario.FormattingEnabled = true;
-            this.cbTipoUsuario.Items.AddRange(new object[] {
-            "Doctor",
-            "Paciente",
-            "Administrador"});
-            this.cbTipoUsuario.Location = new System.Drawing.Point(250, 320);
-            this.cbTipoUsuario.Name = "cbTipoUsuario";
-            this.cbTipoUsuario.Size = new System.Drawing.Size(121, 21);
-            this.cbTipoUsuario.TabIndex = 98;
-            // 
-            // mtbConfirmarPass
-            // 
-            this.mtbConfirmarPass.Location = new System.Drawing.Point(499, 368);
-            this.mtbConfirmarPass.Name = "mtbConfirmarPass";
-            this.mtbConfirmarPass.PasswordChar = '*';
-            this.mtbConfirmarPass.Size = new System.Drawing.Size(100, 20);
-            this.mtbConfirmarPass.TabIndex = 100;
-            // 
-            // mtbPass
-            // 
-            this.mtbPass.Location = new System.Drawing.Point(250, 368);
-            this.mtbPass.Name = "mtbPass";
-            this.mtbPass.PasswordChar = '*';
-            this.mtbPass.Size = new System.Drawing.Size(100, 20);
-            this.mtbPass.TabIndex = 99;
-            // 
-            // rchDireccion
-            // 
-            this.rchDireccion.Location = new System.Drawing.Point(250, 263);
-            this.rchDireccion.Margin = new System.Windows.Forms.Padding(2);
-            this.rchDireccion.Name = "rchDireccion";
-            this.rchDireccion.Size = new System.Drawing.Size(343, 28);
-            this.rchDireccion.TabIndex = 97;
-            this.rchDireccion.Text = "";
-            // 
-            // txtCedula
-            // 
-            this.txtCedula.BackColor = System.Drawing.SystemColors.Window;
-            this.txtCedula.Location = new System.Drawing.Point(250, 40);
-            this.txtCedula.Name = "txtCedula";
-            this.txtCedula.Size = new System.Drawing.Size(217, 20);
-            this.txtCedula.TabIndex = 91;
-            // 
-            // txtApellidos
-            // 
-            this.txtApellidos.BackColor = System.Drawing.SystemColors.Window;
-            this.txtApellidos.Location = new System.Drawing.Point(250, 138);
-            this.txtApellidos.Name = "txtApellidos";
-            this.txtApellidos.Size = new System.Drawing.Size(343, 20);
-            this.txtApellidos.TabIndex = 93;
-            // 
-            // cbSexo
-            // 
-            this.cbSexo.BackColor = System.Drawing.SystemColors.Window;
-            this.cbSexo.FormattingEnabled = true;
-            this.cbSexo.Items.AddRange(new object[] {
-            "Hombre",
-            "Mujer"});
-            this.cbSexo.Location = new System.Drawing.Point(472, 189);
-            this.cbSexo.Name = "cbSexo";
-            this.cbSexo.Size = new System.Drawing.Size(121, 21);
-            this.cbSexo.TabIndex = 95;
-            // 
-            // txtNombre
-            // 
-            this.txtNombre.BackColor = System.Drawing.SystemColors.Window;
-            this.txtNombre.Location = new System.Drawing.Point(250, 90);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(308, 20);
-            this.txtNombre.TabIndex = 92;
-            // 
-            // dtpFechaNacimiento
-            // 
-            this.dtpFechaNacimiento.CalendarMonthBackground = System.Drawing.SystemColors.Control;
-            this.dtpFechaNacimiento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFechaNacimiento.Location = new System.Drawing.Point(250, 226);
-            this.dtpFechaNacimiento.Name = "dtpFechaNacimiento";
-            this.dtpFechaNacimiento.Size = new System.Drawing.Size(160, 20);
-            this.dtpFechaNacimiento.TabIndex = 96;
             // 
             // Usuario
             // 

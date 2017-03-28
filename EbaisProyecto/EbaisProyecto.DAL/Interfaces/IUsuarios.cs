@@ -13,6 +13,7 @@ namespace EbaisProyecto.DAL.Interfaces
         //SELECTS
         List<Usuarios> ListarUsuarios();
         Usuarios BuscarUsuario(int cedula);
+        Usuarios BuscarPorNombre(string nombre);
 
         //INSERT
         void InsertarUsuario(Usuarios usuario);
