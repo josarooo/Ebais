@@ -237,3 +237,5 @@ C:\Users\fran6\Desktop\Github\Ebais\EbaisProyecto\EbaisProyecto.UI\obj\Debug\Eba
 C:\Users\fran6\Desktop\Github\Ebais\EbaisProyecto\EbaisProyecto.UI\obj\Debug\EbaisProyecto.UI.FormEdicion.resources
 C:\Users\fran6\Desktop\Github\Ebais\EbaisProyecto\EbaisProyecto.UI\obj\Debug\EbaisProyecto.UI.Usuario.resources
 C:\Users\fran6\Desktop\Github\Ebais\EbaisProyecto\EbaisProyecto.UI\obj\Debug\EbaisProyecto.UI.csproj.GenerateResource.Cache
+C:\Users\fran6\Desktop\Github\Ebais\EbaisProyecto\EbaisProyecto.UI\obj\Debug\EbaisProyecto.UI.VistaPaciente.resources
+C:\Users\fran6\Desktop\Github\Ebais\EbaisProyecto\EbaisProyecto.UI\obj\Debug\EbaisProyecto.UI.Pass.resources

@@ -110,6 +110,12 @@
     <Compile Include="FolderUsuario\EditarUsuario.Designer.cs">
       <DependentUpon>EditarUsuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pass.Designer.cs">
+      <DependentUpon>Pass.cs</DependentUpon>
+    </Compile>
     <Compile Include="Principal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -160,6 +166,12 @@
     <Compile Include="FolderUsuario\Usuario.Designer.cs">
       <DependentUpon>Usuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="VistaPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VistaPaciente.Designer.cs">
+      <DependentUpon>VistaPaciente.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FolderCita\Cita.resx">
       <DependentUpon>Cita.cs</DependentUpon>
     </EmbeddedResource>
@@ -189,6 +201,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FolderUsuario\EditarUsuario.resx">
       <DependentUpon>EditarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pass.resx">
+      <DependentUpon>Pass.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>
@@ -222,6 +237,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FolderUsuario\Usuario.resx">
       <DependentUpon>Usuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VistaPaciente.resx">
+      <DependentUpon>VistaPaciente.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">

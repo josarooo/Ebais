@@ -52,5 +52,10 @@ namespace EbaisProyecto.UI
             }
             
         }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -41,6 +41,10 @@ namespace EbaisProyecto.UI
            
             try
             {
+                if (txtNombre.Text == "" || txtApellidos.Text == "" || txtCedula.Text == "" || txtNumero.Text == "" || cbSexo.Text == "" || cbTipoUsuario.Text == "" || rchDireccion.Text == "" || mtbPass.Text == "" || mtbConfirmarPass.Text == "")
+                {
+                    MessageBox.Show("Rellene los campos para continuar");
+                } else { 
                 var user = new Usuarios
                 {
                     Cedula = Convert.ToInt32(txtCedula.Text),
@@ -57,6 +61,7 @@ namespace EbaisProyecto.UI
                 List<Usuarios> ListaU = usu.ListarUsuarios();
                 foreach (var i in ListaU)
                 {
+                    
                     if (Convert.ToInt32(txtCedula.Text) != i.Cedula)
                     {
                         if (mtbPass.Text == mtbConfirmarPass.Text)
@@ -78,12 +83,12 @@ namespace EbaisProyecto.UI
                         break;
                     }
                 }
-                
 
+                }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Ha ocurrido un error " + ex.Data);
+                MessageBox.Show("Ha ocurrido un error desconocido" + ex.Data);
             }
         }
 
