@@ -81,6 +81,7 @@
             // menuStrOpciones
             // 
             this.menuStrOpciones.BackColor = System.Drawing.SystemColors.Menu;
+            this.menuStrOpciones.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuStrOpciones.GripStyle = System.Windows.Forms.ToolStripGripStyle.Visible;
             this.menuStrOpciones.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrOpciones.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -94,9 +95,9 @@
             this.menuStrOpciones.Name = "menuStrOpciones";
             this.menuStrOpciones.Padding = new System.Windows.Forms.Padding(6, 5, 0, 5);
             this.menuStrOpciones.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
-            this.menuStrOpciones.Size = new System.Drawing.Size(784, 29);
+            this.menuStrOpciones.Size = new System.Drawing.Size(784, 35);
             this.menuStrOpciones.TabIndex = 16;
-            this.menuStrOpciones.Text = "menuStrip2";
+            this.menuStrOpciones.Text = "menuPrincipal";
             // 
             // menuItemInicio
             // 
@@ -104,20 +105,20 @@
             this.menuItemPantallaPrincipal,
             this.menuItemSalir});
             this.menuItemInicio.Name = "menuItemInicio";
-            this.menuItemInicio.Size = new System.Drawing.Size(48, 19);
+            this.menuItemInicio.Size = new System.Drawing.Size(59, 25);
             this.menuItemInicio.Text = "Inicio";
             // 
             // menuItemPantallaPrincipal
             // 
             this.menuItemPantallaPrincipal.Name = "menuItemPantallaPrincipal";
-            this.menuItemPantallaPrincipal.Size = new System.Drawing.Size(165, 22);
+            this.menuItemPantallaPrincipal.Size = new System.Drawing.Size(198, 26);
             this.menuItemPantallaPrincipal.Text = "Pantalla Principal";
             this.menuItemPantallaPrincipal.Click += new System.EventHandler(this.menuItemPantallaPrincipal_Click);
             // 
             // menuItemSalir
             // 
             this.menuItemSalir.Name = "menuItemSalir";
-            this.menuItemSalir.Size = new System.Drawing.Size(165, 22);
+            this.menuItemSalir.Size = new System.Drawing.Size(198, 26);
             this.menuItemSalir.Text = "Salir";
             // 
             // menuItemExpedientes
@@ -129,41 +130,41 @@
             this.menuItemPreConsulta,
             this.menuItemDiagnostico});
             this.menuItemExpedientes.Name = "menuItemExpedientes";
-            this.menuItemExpedientes.Size = new System.Drawing.Size(81, 19);
+            this.menuItemExpedientes.Size = new System.Drawing.Size(104, 25);
             this.menuItemExpedientes.Text = "Expedientes";
             // 
             // menuItemNuevoExp
             // 
             this.menuItemNuevoExp.Name = "menuItemNuevoExp";
-            this.menuItemNuevoExp.Size = new System.Drawing.Size(169, 22);
+            this.menuItemNuevoExp.Size = new System.Drawing.Size(205, 26);
             this.menuItemNuevoExp.Text = "Nuevo Expediente";
             this.menuItemNuevoExp.Click += new System.EventHandler(this.menuItemNuevoExp_Click);
             // 
             // menuItemCita
             // 
             this.menuItemCita.Name = "menuItemCita";
-            this.menuItemCita.Size = new System.Drawing.Size(169, 22);
+            this.menuItemCita.Size = new System.Drawing.Size(205, 26);
             this.menuItemCita.Text = "Citas";
             this.menuItemCita.Click += new System.EventHandler(this.menuItemCita_Click);
             // 
             // menuItemPaciente
             // 
             this.menuItemPaciente.Name = "menuItemPaciente";
-            this.menuItemPaciente.Size = new System.Drawing.Size(169, 22);
+            this.menuItemPaciente.Size = new System.Drawing.Size(205, 26);
             this.menuItemPaciente.Text = "Pacientes";
             this.menuItemPaciente.Click += new System.EventHandler(this.menuItemPaciente_Click);
             // 
             // menuItemPreConsulta
             // 
             this.menuItemPreConsulta.Name = "menuItemPreConsulta";
-            this.menuItemPreConsulta.Size = new System.Drawing.Size(169, 22);
+            this.menuItemPreConsulta.Size = new System.Drawing.Size(205, 26);
             this.menuItemPreConsulta.Text = "Preconsulta";
             this.menuItemPreConsulta.Click += new System.EventHandler(this.menuItemPreConsulta_Click);
             // 
             // menuItemDiagnostico
             // 
             this.menuItemDiagnostico.Name = "menuItemDiagnostico";
-            this.menuItemDiagnostico.Size = new System.Drawing.Size(169, 22);
+            this.menuItemDiagnostico.Size = new System.Drawing.Size(205, 26);
             this.menuItemDiagnostico.Text = "Diagnóstico";
             this.menuItemDiagnostico.Click += new System.EventHandler(this.menuItemDiagnostico_Click);
             // 
@@ -172,13 +173,13 @@
             this.menuItemFarmacia.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuItemMedicamentos});
             this.menuItemFarmacia.Name = "menuItemFarmacia";
-            this.menuItemFarmacia.Size = new System.Drawing.Size(67, 19);
+            this.menuItemFarmacia.Size = new System.Drawing.Size(84, 25);
             this.menuItemFarmacia.Text = "Farmacia";
             // 
             // menuItemMedicamentos
             // 
             this.menuItemMedicamentos.Name = "menuItemMedicamentos";
-            this.menuItemMedicamentos.Size = new System.Drawing.Size(153, 22);
+            this.menuItemMedicamentos.Size = new System.Drawing.Size(182, 26);
             this.menuItemMedicamentos.Text = "Medicamentos";
             this.menuItemMedicamentos.Click += new System.EventHandler(this.menuItemMedicamentos_Click);
             // 
@@ -187,13 +188,13 @@
             this.menuItemPadecimientos.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuItemControlPadecimientos});
             this.menuItemPadecimientos.Name = "menuItemPadecimientos";
-            this.menuItemPadecimientos.Size = new System.Drawing.Size(97, 19);
+            this.menuItemPadecimientos.Size = new System.Drawing.Size(122, 25);
             this.menuItemPadecimientos.Text = "Padecimientos";
             // 
             // menuItemControlPadecimientos
             // 
             this.menuItemControlPadecimientos.Name = "menuItemControlPadecimientos";
-            this.menuItemControlPadecimientos.Size = new System.Drawing.Size(211, 22);
+            this.menuItemControlPadecimientos.Size = new System.Drawing.Size(258, 26);
             this.menuItemControlPadecimientos.Text = "Control de padecimientos";
             this.menuItemControlPadecimientos.Click += new System.EventHandler(this.menuItemControlPadecimientos_Click);
             // 
@@ -202,13 +203,13 @@
             this.menuItemUsuarios.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.controlDeUsuariosToolStripMenuItem});
             this.menuItemUsuarios.Name = "menuItemUsuarios";
-            this.menuItemUsuarios.Size = new System.Drawing.Size(64, 19);
+            this.menuItemUsuarios.Size = new System.Drawing.Size(83, 25);
             this.menuItemUsuarios.Text = "Usuarios";
             // 
             // controlDeUsuariosToolStripMenuItem
             // 
             this.controlDeUsuariosToolStripMenuItem.Name = "controlDeUsuariosToolStripMenuItem";
-            this.controlDeUsuariosToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
+            this.controlDeUsuariosToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.controlDeUsuariosToolStripMenuItem.Text = "Control de usuarios";
             this.controlDeUsuariosToolStripMenuItem.Click += new System.EventHandler(this.controlDeUsuariosToolStripMenuItem_Click);
             // 
@@ -219,19 +220,19 @@
             this.menuItemManualUsuario,
             this.menuItemAcercaDe});
             this.menuItemAyuda.Name = "menuItemAyuda";
-            this.menuItemAyuda.Size = new System.Drawing.Size(53, 19);
+            this.menuItemAyuda.Size = new System.Drawing.Size(66, 25);
             this.menuItemAyuda.Text = "Ayuda";
             // 
             // menuItemManualUsuario
             // 
             this.menuItemManualUsuario.Name = "menuItemManualUsuario";
-            this.menuItemManualUsuario.Size = new System.Drawing.Size(172, 22);
+            this.menuItemManualUsuario.Size = new System.Drawing.Size(209, 26);
             this.menuItemManualUsuario.Text = "Manual de usuario";
             // 
             // menuItemAcercaDe
             // 
             this.menuItemAcercaDe.Name = "menuItemAcercaDe";
-            this.menuItemAcercaDe.Size = new System.Drawing.Size(172, 22);
+            this.menuItemAcercaDe.Size = new System.Drawing.Size(209, 26);
             this.menuItemAcercaDe.Text = "Acerca de Ebais";
             // 
             // pnlInicio
@@ -247,7 +248,7 @@
             this.inicio1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(203)))), ((int)(((byte)(227)))));
             this.inicio1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.inicio1.Location = new System.Drawing.Point(0, -3);
-            this.inicio1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.inicio1.Margin = new System.Windows.Forms.Padding(4);
             this.inicio1.Name = "inicio1";
             this.inicio1.Size = new System.Drawing.Size(784, 529);
             this.inicio1.TabIndex = 0;
@@ -264,7 +265,7 @@
             // 
             this.farmacia1.BackColor = System.Drawing.Color.Transparent;
             this.farmacia1.Location = new System.Drawing.Point(0, 3);
-            this.farmacia1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.farmacia1.Margin = new System.Windows.Forms.Padding(4);
             this.farmacia1.Name = "farmacia1";
             this.farmacia1.Size = new System.Drawing.Size(784, 529);
             this.farmacia1.TabIndex = 0;
@@ -281,7 +282,7 @@
             // 
             this.paciente1.BackColor = System.Drawing.Color.Transparent;
             this.paciente1.Location = new System.Drawing.Point(-3, 6);
-            this.paciente1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.paciente1.Margin = new System.Windows.Forms.Padding(4);
             this.paciente1.Name = "paciente1";
             this.paciente1.Size = new System.Drawing.Size(784, 529);
             this.paciente1.TabIndex = 1;
@@ -297,7 +298,7 @@
             // usuario1
             // 
             this.usuario1.Location = new System.Drawing.Point(3, 3);
-            this.usuario1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.usuario1.Margin = new System.Windows.Forms.Padding(4);
             this.usuario1.Name = "usuario1";
             this.usuario1.Size = new System.Drawing.Size(784, 529);
             this.usuario1.TabIndex = 0;
@@ -313,7 +314,7 @@
             // preconsulta1
             // 
             this.preconsulta1.Location = new System.Drawing.Point(3, 3);
-            this.preconsulta1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.preconsulta1.Margin = new System.Windows.Forms.Padding(4);
             this.preconsulta1.Name = "preconsulta1";
             this.preconsulta1.Size = new System.Drawing.Size(784, 529);
             this.preconsulta1.TabIndex = 0;
@@ -330,7 +331,7 @@
             // 
             this.padecimiento1.BackColor = System.Drawing.Color.Transparent;
             this.padecimiento1.Location = new System.Drawing.Point(3, 6);
-            this.padecimiento1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.padecimiento1.Margin = new System.Windows.Forms.Padding(4);
             this.padecimiento1.Name = "padecimiento1";
             this.padecimiento1.Size = new System.Drawing.Size(784, 529);
             this.padecimiento1.TabIndex = 0;
@@ -348,7 +349,7 @@
             // 
             this.diagnostico1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(203)))), ((int)(((byte)(227)))));
             this.diagnostico1.Location = new System.Drawing.Point(0, 3);
-            this.diagnostico1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.diagnostico1.Margin = new System.Windows.Forms.Padding(4);
             this.diagnostico1.Name = "diagnostico1";
             this.diagnostico1.Size = new System.Drawing.Size(784, 529);
             this.diagnostico1.TabIndex = 0;
@@ -365,7 +366,7 @@
             // 
             this.expediente1.BackColor = System.Drawing.Color.Transparent;
             this.expediente1.Location = new System.Drawing.Point(3, 3);
-            this.expediente1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.expediente1.Margin = new System.Windows.Forms.Padding(4);
             this.expediente1.Name = "expediente1";
             this.expediente1.Size = new System.Drawing.Size(784, 529);
             this.expediente1.TabIndex = 0;
@@ -381,7 +382,7 @@
             // cita1
             // 
             this.cita1.Location = new System.Drawing.Point(0, 6);
-            this.cita1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cita1.Margin = new System.Windows.Forms.Padding(4);
             this.cita1.Name = "cita1";
             this.cita1.Size = new System.Drawing.Size(784, 529);
             this.cita1.TabIndex = 0;

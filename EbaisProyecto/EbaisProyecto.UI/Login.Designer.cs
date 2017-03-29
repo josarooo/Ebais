@@ -38,11 +38,12 @@
             // 
             // btIngresar
             // 
-            this.btIngresar.Location = new System.Drawing.Point(357, 415);
+            this.btIngresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btIngresar.Location = new System.Drawing.Point(352, 407);
             this.btIngresar.Name = "btIngresar";
-            this.btIngresar.Size = new System.Drawing.Size(75, 23);
+            this.btIngresar.Size = new System.Drawing.Size(86, 31);
             this.btIngresar.TabIndex = 26;
-            this.btIngresar.Text = "Ingresar";
+            this.btIngresar.Text = "Continuar";
             this.btIngresar.UseVisualStyleBackColor = true;
             this.btIngresar.Click += new System.EventHandler(this.btIngresar_Click);
             // 
@@ -56,9 +57,10 @@
             // 
             // tbUser
             // 
+            this.tbUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbUser.Location = new System.Drawing.Point(279, 248);
             this.tbUser.Name = "tbUser";
-            this.tbUser.Size = new System.Drawing.Size(250, 20);
+            this.tbUser.Size = new System.Drawing.Size(250, 26);
             this.tbUser.TabIndex = 24;
             // 
             // lbPass
@@ -74,10 +76,10 @@
             // lbUsuario
             // 
             this.lbUsuario.AutoSize = true;
-            this.lbUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbUsuario.Location = new System.Drawing.Point(190, 255);
             this.lbUsuario.Name = "lbUsuario";
-            this.lbUsuario.Size = new System.Drawing.Size(58, 13);
+            this.lbUsuario.Size = new System.Drawing.Size(80, 20);
             this.lbUsuario.TabIndex = 28;
             this.lbUsuario.Text = "Cédula : ";
             // 
@@ -87,9 +89,9 @@
             this.lbBienvenido.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbBienvenido.Location = new System.Drawing.Point(34, 123);
             this.lbBienvenido.Name = "lbBienvenido";
-            this.lbBienvenido.Size = new System.Drawing.Size(717, 31);
+            this.lbBienvenido.Size = new System.Drawing.Size(689, 31);
             this.lbBienvenido.TabIndex = 27;
-            this.lbBienvenido.Text = "Bienvenido, escriba sus credenciales para poder continuar";
+            this.lbBienvenido.Text = "Bienvenido, escriba su número de cédula para continuar";
             // 
             // Login
             // 

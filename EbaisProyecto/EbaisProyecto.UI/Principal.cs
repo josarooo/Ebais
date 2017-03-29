@@ -170,7 +170,7 @@ namespace EbaisProyecto.UI
 
         private void Principal_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Environment.Exit(1);
+            Environment.Exit(0);
         }
     }
   
