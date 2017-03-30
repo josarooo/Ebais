@@ -50,3 +50,16 @@ C:\Users\fran6\Desktop\Github\Ebais\EbaisProyecto\EbaisProyecto.DAL\bin\Debug\Eb
 C:\Users\fran6\Desktop\Github\Ebais\EbaisProyecto\EbaisProyecto.DAL\obj\Debug\EbaisProyecto.DAL.csprojResolveAssemblyReference.cache
 C:\Users\fran6\Desktop\Github\Ebais\EbaisProyecto\EbaisProyecto.DAL\obj\Debug\EbaisProyecto.DAL.dll
 C:\Users\fran6\Desktop\Github\Ebais\EbaisProyecto\EbaisProyecto.DAL\obj\Debug\EbaisProyecto.DAL.pdb
+C:\Users\karen\Documents\GitHub\Ebais\EbaisProyecto\EbaisProyecto.DAL\bin\Debug\EbaisProyecto.DAL.dll.config
+C:\Users\karen\Documents\GitHub\Ebais\EbaisProyecto\EbaisProyecto.DAL\bin\Debug\EbaisProyecto.DAL.dll
+C:\Users\karen\Documents\GitHub\Ebais\EbaisProyecto\EbaisProyecto.DAL\bin\Debug\EbaisProyecto.DAL.pdb
+C:\Users\karen\Documents\GitHub\Ebais\EbaisProyecto\EbaisProyecto.DAL\bin\Debug\EbaisProyecto.DATOS.dll
+C:\Users\karen\Documents\GitHub\Ebais\EbaisProyecto\EbaisProyecto.DAL\bin\Debug\ServiceStack.Common.dll
+C:\Users\karen\Documents\GitHub\Ebais\EbaisProyecto\EbaisProyecto.DAL\bin\Debug\ServiceStack.Interfaces.dll
+C:\Users\karen\Documents\GitHub\Ebais\EbaisProyecto\EbaisProyecto.DAL\bin\Debug\ServiceStack.OrmLite.dll
+C:\Users\karen\Documents\GitHub\Ebais\EbaisProyecto\EbaisProyecto.DAL\bin\Debug\ServiceStack.OrmLite.SqlServer.dll
+C:\Users\karen\Documents\GitHub\Ebais\EbaisProyecto\EbaisProyecto.DAL\bin\Debug\ServiceStack.Text.dll
+C:\Users\karen\Documents\GitHub\Ebais\EbaisProyecto\EbaisProyecto.DAL\bin\Debug\EbaisProyecto.DATOS.pdb
+C:\Users\karen\Documents\GitHub\Ebais\EbaisProyecto\EbaisProyecto.DAL\obj\Debug\EbaisProyecto.DAL.csprojResolveAssemblyReference.cache
+C:\Users\karen\Documents\GitHub\Ebais\EbaisProyecto\EbaisProyecto.DAL\obj\Debug\EbaisProyecto.DAL.dll
+C:\Users\karen\Documents\GitHub\Ebais\EbaisProyecto\EbaisProyecto.DAL\obj\Debug\EbaisProyecto.DAL.pdb

@@ -21,3 +21,9 @@ C:\Users\fran6\Desktop\Github\Ebais\EbaisProyecto\EbaisProyecto.DATOS\bin\Debug\
 C:\Users\fran6\Desktop\Github\Ebais\EbaisProyecto\EbaisProyecto.DATOS\obj\Debug\EbaisProyecto.DATOS.csprojResolveAssemblyReference.cache
 C:\Users\fran6\Desktop\Github\Ebais\EbaisProyecto\EbaisProyecto.DATOS\obj\Debug\EbaisProyecto.DATOS.dll
 C:\Users\fran6\Desktop\Github\Ebais\EbaisProyecto\EbaisProyecto.DATOS\obj\Debug\EbaisProyecto.DATOS.pdb
+C:\Users\karen\Documents\GitHub\Ebais\EbaisProyecto\EbaisProyecto.DATOS\bin\Debug\EbaisProyecto.DATOS.dll
+C:\Users\karen\Documents\GitHub\Ebais\EbaisProyecto\EbaisProyecto.DATOS\bin\Debug\EbaisProyecto.DATOS.pdb
+C:\Users\karen\Documents\GitHub\Ebais\EbaisProyecto\EbaisProyecto.DATOS\bin\Debug\ServiceStack.Interfaces.dll
+C:\Users\karen\Documents\GitHub\Ebais\EbaisProyecto\EbaisProyecto.DATOS\obj\Debug\EbaisProyecto.DATOS.csprojResolveAssemblyReference.cache
+C:\Users\karen\Documents\GitHub\Ebais\EbaisProyecto\EbaisProyecto.DATOS\obj\Debug\EbaisProyecto.DATOS.dll
+C:\Users\karen\Documents\GitHub\Ebais\EbaisProyecto\EbaisProyecto.DATOS\obj\Debug\EbaisProyecto.DATOS.pdb

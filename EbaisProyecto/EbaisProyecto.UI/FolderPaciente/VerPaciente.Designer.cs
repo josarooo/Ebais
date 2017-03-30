@@ -65,6 +65,7 @@
             this.btnCancelar.TabIndex = 117;
             this.btnCancelar.Text = "Aceptar";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // rchDireccion
             // 

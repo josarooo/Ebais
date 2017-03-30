@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Paciente));
             this.tabControlMedicamentos = new System.Windows.Forms.TabControl();
             this.tabPagePadecimientos = new System.Windows.Forms.TabPage();
+            this.label2 = new System.Windows.Forms.Label();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.rchDireccion = new System.Windows.Forms.RichTextBox();
             this.btnLimpiar = new System.Windows.Forms.Button();
@@ -56,7 +57,6 @@
             this.txtNombreB = new System.Windows.Forms.TextBox();
             this.label35 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.tabControlMedicamentos.SuspendLayout();
             this.tabPagePadecimientos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numTelefono)).BeginInit();
@@ -103,6 +103,16 @@
             this.tabPagePadecimientos.Size = new System.Drawing.Size(776, 503);
             this.tabPagePadecimientos.TabIndex = 0;
             this.tabPagePadecimientos.Text = "Agregar Paciente";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(391, 190);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(17, 20);
+            this.label2.TabIndex = 86;
+            this.label2.Text = "  ";
             // 
             // btnGuardar
             // 
@@ -327,7 +337,7 @@
             this.dgvListaPacientes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvListaPacientes.Size = new System.Drawing.Size(578, 228);
             this.dgvListaPacientes.TabIndex = 6;
-            this.dgvListaPacientes.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvListaMedicamentosDos_CellDoubleClick);
+            this.dgvListaPacientes.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvListaPacientes_CellDoubleClick);
             // 
             // btnBuscarId
             // 
@@ -338,6 +348,7 @@
             this.btnBuscarId.TabIndex = 4;
             this.btnBuscarId.Text = "Buscar";
             this.btnBuscarId.UseVisualStyleBackColor = false;
+            this.btnBuscarId.Click += new System.EventHandler(this.btnBuscarId_Click);
             // 
             // txtNombreB
             // 
@@ -363,16 +374,6 @@
             this.pictureBox1.Size = new System.Drawing.Size(774, 396);
             this.pictureBox1.TabIndex = 14;
             this.pictureBox1.TabStop = false;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(391, 190);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(17, 20);
-            this.label2.TabIndex = 86;
-            this.label2.Text = "  ";
             // 
             // Paciente
             // 

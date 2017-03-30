@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using EbaisProyecto.DAL.Interfaces;
+using EbaisProyecto.DAL.Clases;
 
 namespace EbaisProyecto.UI.FolderFarmacia
 {
@@ -15,6 +17,38 @@ namespace EbaisProyecto.UI.FolderFarmacia
         public EditarFarmacia()
         {
             InitializeComponent();
+        }
+
+        private void EditarFarmacia_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnConfirmarF_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                var farmacia = new DATOS.Farmacia
+                {
+                    IdMedicamento = Convert.ToInt32(txtCodigoMedicamento.Text),
+                    Tipo = cbMedicamento.SelectedItem.ToString(),
+                    Cantidad = Convert.ToInt32(numCantidad.Value),
+                    Descripcion = rchtDescripcion.Text
+                    
+                };
+
+                IFarmacia farm = new Mfarmacia();
+                farm.ActualizarFarmacia(farmacia);
+
+                MessageBox.Show("La información del paciente se ha actualizado correctamente.");
+
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Ha ocurrido un error. " + ex.Message, "ERROR");
+            }
         }
     }
 }

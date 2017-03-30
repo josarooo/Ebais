@@ -89,7 +89,7 @@ namespace EbaisProyecto.UI
 
             }
         }
-        private void dgvListaMedicamentosDos_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        private void dgvListaPacientes_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             try
             {
@@ -176,6 +176,11 @@ namespace EbaisProyecto.UI
             FormEdicion ventanaEditarPaciente = new FormEdicion();
             ventanaEditarPaciente.Controls.Add(verPaciente);
             ventanaEditarPaciente.ShowDialog();
+        }
+
+        private void btnBuscarId_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

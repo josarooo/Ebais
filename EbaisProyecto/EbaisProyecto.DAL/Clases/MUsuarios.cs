@@ -47,6 +47,7 @@ namespace EbaisProyecto.DAL.Clases
         public void InsertarUsuario(Usuarios usuario)
         {
             _db.Insert(usuario);
+
         }
 
         public List<Usuarios> ListarUsuarios()

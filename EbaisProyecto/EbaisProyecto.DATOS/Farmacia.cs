@@ -8,9 +8,16 @@ namespace EbaisProyecto.DATOS
 {
     public class Farmacia
     {
+        private static int cod = 0;
+
+        public Farmacia()
+        {
+            cod++;
+            IdMedicamento = cod;
+        }
         public int IdMedicamento { get; set; }
 
-        public string Tipo { get; set; }
+        public String Tipo { get; set; }
 
         public int Cantidad { get; set; }
 

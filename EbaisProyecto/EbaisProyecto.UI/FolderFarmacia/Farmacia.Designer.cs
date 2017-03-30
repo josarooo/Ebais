@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.tabPageAgregarMedicamento = new System.Windows.Forms.TabPage();
+            this.dgvMedicamentosUno = new System.Windows.Forms.DataGridView();
             this.label7 = new System.Windows.Forms.Label();
             this.rchtDescripcion = new System.Windows.Forms.RichTextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.dgvListaMedicamentosUno = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.cbMedicamento = new System.Windows.Forms.ComboBox();
             this.label37 = new System.Windows.Forms.Label();
@@ -56,7 +56,7 @@
             this.label36 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
             this.tabPageAgregarMedicamento.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvListaMedicamentosUno)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMedicamentosUno)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numCantidad)).BeginInit();
             this.tabControlMedicamentos.SuspendLayout();
             this.tabPageConsultaMedicamentos.SuspendLayout();
@@ -66,12 +66,12 @@
             // tabPageAgregarMedicamento
             // 
             this.tabPageAgregarMedicamento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(203)))), ((int)(((byte)(227)))));
+            this.tabPageAgregarMedicamento.Controls.Add(this.dgvMedicamentosUno);
             this.tabPageAgregarMedicamento.Controls.Add(this.label7);
             this.tabPageAgregarMedicamento.Controls.Add(this.rchtDescripcion);
             this.tabPageAgregarMedicamento.Controls.Add(this.label5);
             this.tabPageAgregarMedicamento.Controls.Add(this.label4);
             this.tabPageAgregarMedicamento.Controls.Add(this.label3);
-            this.tabPageAgregarMedicamento.Controls.Add(this.dgvListaMedicamentosUno);
             this.tabPageAgregarMedicamento.Controls.Add(this.label1);
             this.tabPageAgregarMedicamento.Controls.Add(this.cbMedicamento);
             this.tabPageAgregarMedicamento.Controls.Add(this.label37);
@@ -89,10 +89,19 @@
             this.tabPageAgregarMedicamento.Text = "Agregar Medicamentos";
             this.tabPageAgregarMedicamento.Click += new System.EventHandler(this.tabPageAgregarMedicamento_Click);
             // 
+            // dgvMedicamentosUno
+            // 
+            this.dgvMedicamentosUno.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.dgvMedicamentosUno.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvMedicamentosUno.Location = new System.Drawing.Point(387, 48);
+            this.dgvMedicamentosUno.Name = "dgvMedicamentosUno";
+            this.dgvMedicamentosUno.Size = new System.Drawing.Size(290, 359);
+            this.dgvMedicamentosUno.TabIndex = 68;
+            // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(44, 231);
+            this.label7.Location = new System.Drawing.Point(37, 204);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(66, 13);
             this.label7.TabIndex = 67;
@@ -100,7 +109,7 @@
             // 
             // rchtDescripcion
             // 
-            this.rchtDescripcion.Location = new System.Drawing.Point(46, 247);
+            this.rchtDescripcion.Location = new System.Drawing.Point(39, 220);
             this.rchtDescripcion.Name = "rchtDescripcion";
             this.rchtDescripcion.Size = new System.Drawing.Size(312, 125);
             this.rchtDescripcion.TabIndex = 65;
@@ -109,7 +118,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(218, 124);
+            this.label5.Location = new System.Drawing.Point(211, 97);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(52, 13);
             this.label5.TabIndex = 64;
@@ -118,7 +127,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(44, 121);
+            this.label4.Location = new System.Drawing.Point(37, 94);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(31, 13);
             this.label4.TabIndex = 63;
@@ -127,25 +136,16 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(44, 78);
+            this.label3.Location = new System.Drawing.Point(37, 51);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(47, 13);
             this.label3.TabIndex = 62;
             this.label3.Text = "Nombre:";
             // 
-            // dgvListaMedicamentosUno
-            // 
-            this.dgvListaMedicamentosUno.BackgroundColor = System.Drawing.Color.WhiteSmoke;
-            this.dgvListaMedicamentosUno.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvListaMedicamentosUno.Location = new System.Drawing.Point(397, 28);
-            this.dgvListaMedicamentosUno.Name = "dgvListaMedicamentosUno";
-            this.dgvListaMedicamentosUno.Size = new System.Drawing.Size(327, 422);
-            this.dgvListaMedicamentosUno.TabIndex = 61;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(44, 124);
+            this.label1.Location = new System.Drawing.Point(37, 97);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(0, 13);
             this.label1.TabIndex = 60;
@@ -153,7 +153,10 @@
             // cbMedicamento
             // 
             this.cbMedicamento.FormattingEnabled = true;
-            this.cbMedicamento.Location = new System.Drawing.Point(123, 120);
+            this.cbMedicamento.Items.AddRange(new object[] {
+            "Pastillas",
+            "Jarabe"});
+            this.cbMedicamento.Location = new System.Drawing.Point(116, 93);
             this.cbMedicamento.Margin = new System.Windows.Forms.Padding(2);
             this.cbMedicamento.Name = "cbMedicamento";
             this.cbMedicamento.Size = new System.Drawing.Size(62, 21);
@@ -162,21 +165,21 @@
             // label37
             // 
             this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(44, 159);
+            this.label37.Location = new System.Drawing.Point(37, 132);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(0, 13);
             this.label37.TabIndex = 49;
             // 
             // txtNombreMedicamento
             // 
-            this.txtNombreMedicamento.Location = new System.Drawing.Point(123, 75);
+            this.txtNombreMedicamento.Location = new System.Drawing.Point(116, 48);
             this.txtNombreMedicamento.Name = "txtNombreMedicamento";
             this.txtNombreMedicamento.Size = new System.Drawing.Size(212, 20);
             this.txtNombreMedicamento.TabIndex = 31;
             // 
             // numCantidad
             // 
-            this.numCantidad.Location = new System.Drawing.Point(276, 121);
+            this.numCantidad.Location = new System.Drawing.Point(269, 94);
             this.numCantidad.Name = "numCantidad";
             this.numCantidad.Size = new System.Drawing.Size(59, 20);
             this.numCantidad.TabIndex = 43;
@@ -184,7 +187,7 @@
             // label32
             // 
             this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(212, 121);
+            this.label32.Location = new System.Drawing.Point(205, 94);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(0, 13);
             this.label32.TabIndex = 40;
@@ -192,7 +195,7 @@
             // btnLimpiar
             // 
             this.btnLimpiar.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnLimpiar.Location = new System.Drawing.Point(261, 404);
+            this.btnLimpiar.Location = new System.Drawing.Point(254, 377);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(97, 30);
             this.btnLimpiar.TabIndex = 37;
@@ -202,17 +205,18 @@
             // btnGuardar
             // 
             this.btnGuardar.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnGuardar.Location = new System.Drawing.Point(47, 404);
+            this.btnGuardar.Location = new System.Drawing.Point(40, 377);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(97, 30);
             this.btnGuardar.TabIndex = 36;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = false;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // label25
             // 
             this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(44, 78);
+            this.label25.Location = new System.Drawing.Point(37, 51);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(0, 13);
             this.label25.TabIndex = 2;
@@ -258,6 +262,7 @@
             this.btnEditar.TabIndex = 8;
             this.btnEditar.Text = "Editar";
             this.btnEditar.UseVisualStyleBackColor = false;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // btnEliminar
             // 
@@ -277,6 +282,7 @@
             this.dgvListaMedicamentosDos.Name = "dgvListaMedicamentosDos";
             this.dgvListaMedicamentosDos.Size = new System.Drawing.Size(578, 228);
             this.dgvListaMedicamentosDos.TabIndex = 6;
+            this.dgvListaMedicamentosDos.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvListaMedicamentosDos_CellDoubleClick_1);
             // 
             // btnBuscarNombre
             // 
@@ -339,9 +345,10 @@
             this.Controls.Add(this.tabControlMedicamentos);
             this.Name = "Farmacia";
             this.Size = new System.Drawing.Size(784, 529);
+            this.Load += new System.EventHandler(this.Farmacia_Load);
             this.tabPageAgregarMedicamento.ResumeLayout(false);
             this.tabPageAgregarMedicamento.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvListaMedicamentosUno)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMedicamentosUno)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numCantidad)).EndInit();
             this.tabControlMedicamentos.ResumeLayout(false);
             this.tabPageConsultaMedicamentos.ResumeLayout(false);
@@ -354,7 +361,6 @@
         #endregion
 
         private System.Windows.Forms.TabPage tabPageAgregarMedicamento;
-        private System.Windows.Forms.DataGridView dgvListaMedicamentosUno;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cbMedicamento;
         private System.Windows.Forms.Label label37;
@@ -380,5 +386,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.DataGridView dgvMedicamentosUno;
     }
 }

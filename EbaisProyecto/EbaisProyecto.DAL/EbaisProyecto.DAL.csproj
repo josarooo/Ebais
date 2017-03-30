@@ -61,9 +61,11 @@
       <DependentUpon>BD.settings</DependentUpon>
     </Compile>
     <Compile Include="Clases\MExpediente.cs" />
+    <Compile Include="Clases\Mfarmacia.cs" />
     <Compile Include="Clases\MLogin.cs" />
     <Compile Include="Clases\MUsuarios.cs" />
     <Compile Include="Interfaces\IExpediente.cs" />
+    <Compile Include="Interfaces\IFarmacia.cs" />
     <Compile Include="Interfaces\ILogin.cs" />
     <Compile Include="Interfaces\IUsuarios.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
