@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{71162E7D-8A5F-4F99-B571-9FC62A7FEF77}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EbaisProyecto.UI</RootNamespace>
+    <AssemblyName>EbaisProyecto.UI</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FolderCita\Cita.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FolderCita\Cita.Designer.cs">
+      <DependentUpon>Cita.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FolderDiagnostico\Diagnostico.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FolderDiagnostico\Diagnostico.Designer.cs">
+      <DependentUpon>Diagnostico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FolderExpediente\EditarExpediente.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FolderExpediente\EditarExpediente.Designer.cs">
+      <DependentUpon>EditarExpediente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FolderExpediente\Expediente.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FolderExpediente\Expediente.Designer.cs">
+      <DependentUpon>Expediente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FolderFarmacia\EditarFarmacia.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FolderFarmacia\EditarFarmacia.Designer.cs">
+      <DependentUpon>EditarFarmacia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FolderFarmacia\Farmacia.cs">
+      <SubType>UserControl</SubType>
+      <CustomToolNamespace>EbaisProyecto.UI</CustomToolNamespace>
+    </Compile>
+    <Compile Include="FolderFarmacia\Farmacia.Designer.cs">
+      <DependentUpon>Farmacia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FolderCita\EditarCita.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FolderCita\EditarCita.Designer.cs">
+      <DependentUpon>EditarCita.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FolderFarmacia\VerFarmacia.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FolderFarmacia\VerFarmacia.Designer.cs">
+      <DependentUpon>VerFarmacia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FolderPaciente\EditarPaciente.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FolderPaciente\EditarPaciente.Designer.cs">
+      <DependentUpon>EditarPaciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FolderPaciente\VerPaciente.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FolderPaciente\VerPaciente.Designer.cs">
+      <DependentUpon>VerPaciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FolderPadecimiento\EditarPadecimiento.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FolderPadecimiento\EditarPadecimiento.Designer.cs">
+      <DependentUpon>EditarPadecimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FolderPadecimiento\VerPadecimiento.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FolderPadecimiento\VerPadecimiento.Designer.cs">
+      <DependentUpon>VerPadecimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FolderUsuario\EditarUsuario.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FolderUsuario\EditarUsuario.Designer.cs">
+      <DependentUpon>EditarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pass.Designer.cs">
+      <DependentUpon>Pass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal.Designer.cs">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Inicio.Designer.cs">
+      <DependentUpon>Inicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FolderPadecimiento\Padecimiento.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FolderPadecimiento\Padecimiento.Designer.cs">
+      <DependentUpon>Padecimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FolderPreConsulta\Preconsulta.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FolderPreConsulta\Preconsulta.Designer.cs">
+      <DependentUpon>Preconsulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="FolderPaciente\Paciente.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FolderPaciente\Paciente.Designer.cs">
+      <DependentUpon>Paciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEdicion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEdicion.Designer.cs">
+      <DependentUpon>FormEdicion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FolderUsuario\Usuario.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FolderUsuario\Usuario.Designer.cs">
+      <DependentUpon>Usuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VistaPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VistaPaciente.Designer.cs">
+      <DependentUpon>VistaPaciente.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FolderCita\Cita.resx">
+      <DependentUpon>Cita.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FolderDiagnostico\Diagnostico.resx">
+      <DependentUpon>Diagnostico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FolderExpediente\EditarExpediente.resx">
+      <DependentUpon>EditarExpediente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FolderExpediente\Expediente.resx">
+      <DependentUpon>Expediente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FolderFarmacia\EditarFarmacia.resx">
+      <DependentUpon>EditarFarmacia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FolderFarmacia\Farmacia.resx">
+      <DependentUpon>Farmacia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FolderCita\EditarCita.resx">
+      <DependentUpon>EditarCita.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FolderFarmacia\VerFarmacia.resx">
+      <DependentUpon>VerFarmacia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FolderPaciente\EditarPaciente.resx">
+      <DependentUpon>EditarPaciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FolderPaciente\VerPaciente.resx">
+      <DependentUpon>VerPaciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FolderPadecimiento\EditarPadecimiento.resx">
+      <DependentUpon>EditarPadecimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FolderPadecimiento\VerPadecimiento.resx">
+      <DependentUpon>VerPadecimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FolderUsuario\EditarUsuario.resx">
+      <DependentUpon>EditarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pass.resx">
+      <DependentUpon>Pass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal.resx">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicio.resx">
+      <DependentUpon>Inicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FolderPaciente\Paciente.resx">
+      <DependentUpon>Paciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FolderPadecimiento\Padecimiento.resx">
+      <DependentUpon>Padecimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FolderPreConsulta\Preconsulta.resx">
+      <DependentUpon>Preconsulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FormEdicion.resx">
+      <DependentUpon>FormEdicion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FolderUsuario\Usuario.resx">
+      <DependentUpon>Usuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VistaPaciente.resx">
+      <DependentUpon>VistaPaciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EbaisProyecto.DAL\EbaisProyecto.DAL.csproj">
+      <Project>{9c78cb4a-3c59-47e8-aab5-69965c57d8a9}</Project>
+      <Name>EbaisProyecto.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EbaisProyecto.DATOS\EbaisProyecto.DATOS.csproj">
+      <Project>{9eb674d0-d24d-48d3-b3a9-c638c65d96fd}</Project>
+      <Name>EbaisProyecto.DATOS</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
