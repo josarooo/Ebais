@@ -209,5 +209,11 @@ namespace EbaisProyecto.UI
                 MessageBox.Show("No se encontró el usuario. " + ex.Data);
             }
         }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            this.txtNombrePadecimento.Text = "";
+            this.rchtDescrip.Text = "";
+        }
     }
 }

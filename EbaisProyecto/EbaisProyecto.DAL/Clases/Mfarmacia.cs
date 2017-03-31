@@ -57,7 +57,7 @@ namespace EbaisProyecto.DAL.Clases
             return _db.Select<Farmacia>();
         }
 
-        public int UltimoValor()
+        public int UltimoValor()//Incrementa 
         {
             return _db.Scalar<int>("select max(IdMedicamento) from Farmacia");
         }
