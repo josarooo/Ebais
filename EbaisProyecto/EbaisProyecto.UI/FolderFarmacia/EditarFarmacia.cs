@@ -34,6 +34,7 @@ namespace EbaisProyecto.UI.FolderFarmacia
                 DATOS.Farmacia farmacia = new DATOS.Farmacia();
                
                 farmacia.IdMedicamento = Convert.ToInt32(txtCodigoMedicamento.Text);
+                farmacia.Nombre = txt_nom_medica.Text;
                 farmacia.Tipo = cbMedicamento.Text;
                 farmacia.Cantidad = Convert.ToInt32(numCantidad.Value);
                 farmacia.Descripcion = rchtDescripcion.Text;

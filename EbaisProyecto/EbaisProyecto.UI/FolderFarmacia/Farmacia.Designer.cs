@@ -44,16 +44,18 @@
             this.label25 = new System.Windows.Forms.Label();
             this.tabControlMedicamentos = new System.Windows.Forms.TabControl();
             this.tabPageConsultaMedicamentos = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
+            this.cboMedica = new System.Windows.Forms.ComboBox();
+            this.btn_buscar_tipo = new System.Windows.Forms.Button();
+            this.Tipo = new System.Windows.Forms.Label();
+            this.btn_ver = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.dgvListaMedicamentosDos = new System.Windows.Forms.DataGridView();
-            this.btnBuscarNombre = new System.Windows.Forms.Button();
+            this.btnBuscarCodigo = new System.Windows.Forms.Button();
             this.txtCodigoB = new System.Windows.Forms.TextBox();
             this.label36 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.Tipo = new System.Windows.Forms.Label();
-            this.cboMedica = new System.Windows.Forms.ComboBox();
+            this.lbl_nom_medica = new System.Windows.Forms.Label();
+            this.txt_nom_medica = new System.Windows.Forms.TextBox();
             this.tabPageAgregarMedicamento.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMedicamentosUno)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numCantidad)).BeginInit();
@@ -65,6 +67,8 @@
             // tabPageAgregarMedicamento
             // 
             this.tabPageAgregarMedicamento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(203)))), ((int)(((byte)(227)))));
+            this.tabPageAgregarMedicamento.Controls.Add(this.txt_nom_medica);
+            this.tabPageAgregarMedicamento.Controls.Add(this.lbl_nom_medica);
             this.tabPageAgregarMedicamento.Controls.Add(this.dgvMedicamentosUno);
             this.tabPageAgregarMedicamento.Controls.Add(this.label7);
             this.tabPageAgregarMedicamento.Controls.Add(this.rchtDescripcion);
@@ -182,6 +186,7 @@
             this.btnLimpiar.TabIndex = 37;
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.UseVisualStyleBackColor = false;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click_1);
             // 
             // btnGuardar
             // 
@@ -218,13 +223,13 @@
             // 
             this.tabPageConsultaMedicamentos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(203)))), ((int)(((byte)(227)))));
             this.tabPageConsultaMedicamentos.Controls.Add(this.cboMedica);
-            this.tabPageConsultaMedicamentos.Controls.Add(this.button2);
+            this.tabPageConsultaMedicamentos.Controls.Add(this.btn_buscar_tipo);
             this.tabPageConsultaMedicamentos.Controls.Add(this.Tipo);
-            this.tabPageConsultaMedicamentos.Controls.Add(this.button1);
+            this.tabPageConsultaMedicamentos.Controls.Add(this.btn_ver);
             this.tabPageConsultaMedicamentos.Controls.Add(this.btnEditar);
             this.tabPageConsultaMedicamentos.Controls.Add(this.btnEliminar);
             this.tabPageConsultaMedicamentos.Controls.Add(this.dgvListaMedicamentosDos);
-            this.tabPageConsultaMedicamentos.Controls.Add(this.btnBuscarNombre);
+            this.tabPageConsultaMedicamentos.Controls.Add(this.btnBuscarCodigo);
             this.tabPageConsultaMedicamentos.Controls.Add(this.txtCodigoB);
             this.tabPageConsultaMedicamentos.Controls.Add(this.label36);
             this.tabPageConsultaMedicamentos.Location = new System.Drawing.Point(4, 22);
@@ -235,16 +240,48 @@
             this.tabPageConsultaMedicamentos.Text = "Consulta y edición";
             this.tabPageConsultaMedicamentos.Click += new System.EventHandler(this.tabPageConsultaMedicamentos_Click);
             // 
-            // button1
+            // cboMedica
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.button1.Location = new System.Drawing.Point(343, 432);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(97, 30);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "Ver";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.cboMedica.FormattingEnabled = true;
+            this.cboMedica.Items.AddRange(new object[] {
+            "Pastillas",
+            "Jarabe"});
+            this.cboMedica.Location = new System.Drawing.Point(250, 102);
+            this.cboMedica.Name = "cboMedica";
+            this.cboMedica.Size = new System.Drawing.Size(213, 21);
+            this.cboMedica.TabIndex = 15;
+            // 
+            // btn_buscar_tipo
+            // 
+            this.btn_buscar_tipo.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btn_buscar_tipo.Location = new System.Drawing.Point(494, 95);
+            this.btn_buscar_tipo.Name = "btn_buscar_tipo";
+            this.btn_buscar_tipo.Size = new System.Drawing.Size(97, 30);
+            this.btn_buscar_tipo.TabIndex = 12;
+            this.btn_buscar_tipo.Text = "Buscar";
+            this.btn_buscar_tipo.UseVisualStyleBackColor = false;
+            this.btn_buscar_tipo.Click += new System.EventHandler(this.button2_Click_1);
+            // 
+            // Tipo
+            // 
+            this.Tipo.AutoSize = true;
+            this.Tipo.Location = new System.Drawing.Point(116, 102);
+            this.Tipo.Name = "Tipo";
+            this.Tipo.Size = new System.Drawing.Size(95, 13);
+            this.Tipo.TabIndex = 10;
+            this.Tipo.Text = "Tipo Medicamento";
+            this.Tipo.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // btn_ver
+            // 
+            this.btn_ver.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btn_ver.Location = new System.Drawing.Point(343, 432);
+            this.btn_ver.Name = "btn_ver";
+            this.btn_ver.Size = new System.Drawing.Size(97, 30);
+            this.btn_ver.TabIndex = 9;
+            this.btn_ver.Text = "Ver";
+            this.btn_ver.UseVisualStyleBackColor = false;
+            this.btn_ver.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnEditar
             // 
@@ -278,16 +315,16 @@
             this.dgvListaMedicamentosDos.TabIndex = 6;
             this.dgvListaMedicamentosDos.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvListaMedicamentosDos_CellDoubleClick_1);
             // 
-            // btnBuscarNombre
+            // btnBuscarCodigo
             // 
-            this.btnBuscarNombre.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnBuscarNombre.Location = new System.Drawing.Point(495, 56);
-            this.btnBuscarNombre.Name = "btnBuscarNombre";
-            this.btnBuscarNombre.Size = new System.Drawing.Size(97, 30);
-            this.btnBuscarNombre.TabIndex = 5;
-            this.btnBuscarNombre.Text = "Buscar";
-            this.btnBuscarNombre.UseVisualStyleBackColor = false;
-            this.btnBuscarNombre.Click += new System.EventHandler(this.btnBuscarNombre_Click);
+            this.btnBuscarCodigo.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnBuscarCodigo.Location = new System.Drawing.Point(495, 56);
+            this.btnBuscarCodigo.Name = "btnBuscarCodigo";
+            this.btnBuscarCodigo.Size = new System.Drawing.Size(97, 30);
+            this.btnBuscarCodigo.TabIndex = 5;
+            this.btnBuscarCodigo.Text = "Buscar";
+            this.btnBuscarCodigo.UseVisualStyleBackColor = false;
+            this.btnBuscarCodigo.Click += new System.EventHandler(this.btnBuscarNombre_Click);
             // 
             // txtCodigoB
             // 
@@ -305,37 +342,21 @@
             this.label36.TabIndex = 1;
             this.label36.Text = "Código Medicamento";
             // 
-            // button2
+            // lbl_nom_medica
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.button2.Location = new System.Drawing.Point(494, 95);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(97, 30);
-            this.button2.TabIndex = 12;
-            this.button2.Text = "Buscar";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            this.lbl_nom_medica.AutoSize = true;
+            this.lbl_nom_medica.Location = new System.Drawing.Point(35, 69);
+            this.lbl_nom_medica.Name = "lbl_nom_medica";
+            this.lbl_nom_medica.Size = new System.Drawing.Size(114, 13);
+            this.lbl_nom_medica.TabIndex = 69;
+            this.lbl_nom_medica.Text = "Nombre Medicamento:";
             // 
-            // Tipo
+            // txt_nom_medica
             // 
-            this.Tipo.AutoSize = true;
-            this.Tipo.Location = new System.Drawing.Point(116, 102);
-            this.Tipo.Name = "Tipo";
-            this.Tipo.Size = new System.Drawing.Size(95, 13);
-            this.Tipo.TabIndex = 10;
-            this.Tipo.Text = "Tipo Medicamento";
-            this.Tipo.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // cboMedica
-            // 
-            this.cboMedica.FormattingEnabled = true;
-            this.cboMedica.Items.AddRange(new object[] {
-            "Pastillas",
-            "Jarabe"});
-            this.cboMedica.Location = new System.Drawing.Point(250, 102);
-            this.cboMedica.Name = "cboMedica";
-            this.cboMedica.Size = new System.Drawing.Size(213, 21);
-            this.cboMedica.TabIndex = 15;
+            this.txt_nom_medica.Location = new System.Drawing.Point(155, 69);
+            this.txt_nom_medica.Name = "txt_nom_medica";
+            this.txt_nom_medica.Size = new System.Drawing.Size(168, 20);
+            this.txt_nom_medica.TabIndex = 70;
             // 
             // Farmacia
             // 
@@ -374,7 +395,7 @@
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.DataGridView dgvListaMedicamentosDos;
-        private System.Windows.Forms.Button btnBuscarNombre;
+        private System.Windows.Forms.Button btnBuscarCodigo;
         private System.Windows.Forms.TextBox txtCodigoB;
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.RichTextBox rchtDescripcion;
@@ -382,9 +403,11 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.DataGridView dgvMedicamentosUno;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btn_ver;
+        private System.Windows.Forms.Button btn_buscar_tipo;
         private System.Windows.Forms.Label Tipo;
         private System.Windows.Forms.ComboBox cboMedica;
+        private System.Windows.Forms.TextBox txt_nom_medica;
+        private System.Windows.Forms.Label lbl_nom_medica;
     }
 }

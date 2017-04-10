@@ -51,7 +51,7 @@ namespace EbaisProyecto.UI
                 var farmacia = new DATOS.Farmacia
                 {
                     IdMedicamento = cod,
-                    //Nombre = txtNombreMedicamento.Text,
+                    Nombre = txt_nom_medica.Text,
                     Tipo = cbMedicamento.Text,
                     Cantidad = Convert.ToInt32(numCantidad.Value),
                     Descripcion = rchtDescripcion.Text
@@ -78,7 +78,7 @@ namespace EbaisProyecto.UI
         private void LimpiarCampos()
         {
 
-            
+            txt_nom_medica.Text = "";
             cbMedicamento.SelectedIndex = 0;
             numCantidad.Value = 0;
             rchtDescripcion.Clear();
@@ -103,9 +103,10 @@ namespace EbaisProyecto.UI
         {
             var editarFarmacia = new EditarFarmacia();
             editarFarmacia.txtCodigoMedicamento.Text = dgvListaMedicamentosDos.SelectedCells[0].Value.ToString();
-            editarFarmacia.cbMedicamento.SelectedText = dgvListaMedicamentosDos.SelectedCells[1].Value.ToString();
-            editarFarmacia.numCantidad.Value = Convert.ToInt32(dgvListaMedicamentosDos.SelectedCells[2].Value);
-            editarFarmacia.rchtDescripcion.Text = dgvListaMedicamentosDos.SelectedCells[3].Value.ToString();
+            editarFarmacia.txt_nom_medica.Text = dgvListaMedicamentosDos.SelectedCells[1].Value.ToString();
+            editarFarmacia.cbMedicamento.SelectedText = dgvListaMedicamentosDos.SelectedCells[2].Value.ToString();
+            editarFarmacia.numCantidad.Value = Convert.ToInt32(dgvListaMedicamentosDos.SelectedCells[3].Value);
+            editarFarmacia.rchtDescripcion.Text = dgvListaMedicamentosDos.SelectedCells[4].Value.ToString();
 
             FormEdicion ventanaEditarFarmacia = new FormEdicion();
             ventanaEditarFarmacia.Controls.Add(editarFarmacia);
@@ -205,9 +206,10 @@ namespace EbaisProyecto.UI
             {
                 var verFarmacia = new VerFarmacia();
                 verFarmacia.txtId.Text = dgvListaMedicamentosDos.SelectedCells[0].Value.ToString();
-                verFarmacia.txtTipo.Text = dgvListaMedicamentosDos.SelectedCells[1].Value.ToString();
-                verFarmacia.txtCantidad.Text = dgvListaMedicamentosDos.SelectedCells[2].Value.ToString();
-                verFarmacia.rchDesc.Text = dgvListaMedicamentosDos.SelectedCells[3].Value.ToString();
+                verFarmacia.txtNomMedica.Text = dgvListaMedicamentosDos.SelectedCells[1].Value.ToString();
+                verFarmacia.txtTipo.Text = dgvListaMedicamentosDos.SelectedCells[2].Value.ToString();
+                verFarmacia.txtCantidad.Text = dgvListaMedicamentosDos.SelectedCells[3].Value.ToString();
+                verFarmacia.rchDesc.Text = dgvListaMedicamentosDos.SelectedCells[4].Value.ToString();
 
                 FormEdicion ventanaEditarFarmacia = new FormEdicion();
                 ventanaEditarFarmacia.Controls.Add(verFarmacia);
@@ -232,7 +234,6 @@ namespace EbaisProyecto.UI
                 IFarmacia far = new Mfarmacia();
                 var farma = far.BuscarPorTipo(cboMedica.Text);
                 dgvListaMedicamentosDos.DataSource = null;
-                //List<DATOS.Farmacia> ListaFarma = new List<DATOS.Farmacia> { farma };
                 dgvListaMedicamentosDos.DataSource = farma;
             }
             catch (Exception ex)
@@ -249,6 +250,11 @@ namespace EbaisProyecto.UI
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnLimpiar_Click_1(object sender, EventArgs e)
+        {
+            LimpiarCampos();
         }
     }
 }

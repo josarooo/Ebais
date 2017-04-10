@@ -41,6 +41,8 @@
             this.label37 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
+            this.lblNomM = new System.Windows.Forms.Label();
+            this.txtNombreM = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnSalir
@@ -127,10 +129,10 @@
             this.cbPadecimento.Items.AddRange(new object[] {
             "Asma",
             "Diabetes"});
-            this.cbPadecimento.Location = new System.Drawing.Point(110, 129);
+            this.cbPadecimento.Location = new System.Drawing.Point(137, 127);
             this.cbPadecimento.Margin = new System.Windows.Forms.Padding(2);
             this.cbPadecimento.Name = "cbPadecimento";
-            this.cbPadecimento.Size = new System.Drawing.Size(88, 21);
+            this.cbPadecimento.Size = new System.Drawing.Size(134, 21);
             this.cbPadecimento.TabIndex = 89;
             // 
             // label37
@@ -157,10 +159,28 @@
             this.label25.Size = new System.Drawing.Size(0, 13);
             this.label25.TabIndex = 85;
             // 
+            // lblNomM
+            // 
+            this.lblNomM.AutoSize = true;
+            this.lblNomM.Location = new System.Drawing.Point(60, 87);
+            this.lblNomM.Name = "lblNomM";
+            this.lblNomM.Size = new System.Drawing.Size(47, 13);
+            this.lblNomM.TabIndex = 100;
+            this.lblNomM.Text = "Nombre:";
+            // 
+            // txtNombreM
+            // 
+            this.txtNombreM.Location = new System.Drawing.Point(136, 79);
+            this.txtNombreM.Name = "txtNombreM";
+            this.txtNombreM.Size = new System.Drawing.Size(135, 20);
+            this.txtNombreM.TabIndex = 101;
+            // 
             // EditarPadecimiento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.txtNombreM);
+            this.Controls.Add(this.lblNomM);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnConfirmarF);
             this.Controls.Add(this.label2);
@@ -196,5 +216,7 @@
         public System.Windows.Forms.Label label37;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label lblNomM;
+        public System.Windows.Forms.TextBox txtNombreM;
     }
 }

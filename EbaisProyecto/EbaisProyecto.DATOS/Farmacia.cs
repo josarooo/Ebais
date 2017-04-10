@@ -13,11 +13,14 @@ namespace EbaisProyecto.DATOS
       
         public int IdMedicamento { get; set; }
 
+        public string Nombre { get; set; }
+
         public String Tipo { get; set; }
 
         public int Cantidad { get; set; }
 
         public string Descripcion { get; set; }
 
+       
     }
 }

@@ -37,6 +37,8 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtCantidad = new System.Windows.Forms.TextBox();
+            this.nombreM = new System.Windows.Forms.Label();
+            this.txtNomMedica = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // txtId
@@ -53,7 +55,7 @@
             // 
             this.txtTipo.BackColor = System.Drawing.SystemColors.Window;
             this.txtTipo.Enabled = false;
-            this.txtTipo.Location = new System.Drawing.Point(143, 80);
+            this.txtTipo.Location = new System.Drawing.Point(143, 93);
             this.txtTipo.Name = "txtTipo";
             this.txtTipo.ReadOnly = true;
             this.txtTipo.Size = new System.Drawing.Size(146, 20);
@@ -61,7 +63,7 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(214, 219);
+            this.btnCancelar.Location = new System.Drawing.Point(214, 232);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(75, 23);
             this.btnCancelar.TabIndex = 144;
@@ -71,7 +73,7 @@
             // 
             // rchDesc
             // 
-            this.rchDesc.Location = new System.Drawing.Point(121, 152);
+            this.rchDesc.Location = new System.Drawing.Point(121, 165);
             this.rchDesc.Margin = new System.Windows.Forms.Padding(2);
             this.rchDesc.Name = "rchDesc";
             this.rchDesc.ReadOnly = true;
@@ -82,7 +84,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(14, 155);
+            this.label1.Location = new System.Drawing.Point(14, 168);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(66, 13);
             this.label1.TabIndex = 141;
@@ -91,7 +93,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(14, 83);
+            this.label4.Location = new System.Drawing.Point(14, 96);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(34, 13);
             this.label4.TabIndex = 142;
@@ -109,7 +111,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(17, 110);
+            this.label2.Location = new System.Drawing.Point(17, 123);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(52, 13);
             this.label2.TabIndex = 147;
@@ -118,15 +120,34 @@
             // txtCantidad
             // 
             this.txtCantidad.Enabled = false;
-            this.txtCantidad.Location = new System.Drawing.Point(143, 110);
+            this.txtCantidad.Location = new System.Drawing.Point(143, 123);
             this.txtCantidad.Name = "txtCantidad";
             this.txtCantidad.Size = new System.Drawing.Size(100, 20);
             this.txtCantidad.TabIndex = 148;
+            // 
+            // nombreM
+            // 
+            this.nombreM.AutoSize = true;
+            this.nombreM.Location = new System.Drawing.Point(17, 67);
+            this.nombreM.Name = "nombreM";
+            this.nombreM.Size = new System.Drawing.Size(47, 13);
+            this.nombreM.TabIndex = 149;
+            this.nombreM.Text = "Nombre:";
+            // 
+            // txtNomMedica
+            // 
+            this.txtNomMedica.Enabled = false;
+            this.txtNomMedica.Location = new System.Drawing.Point(143, 59);
+            this.txtNomMedica.Name = "txtNomMedica";
+            this.txtNomMedica.Size = new System.Drawing.Size(147, 20);
+            this.txtNomMedica.TabIndex = 150;
             // 
             // VerFarmacia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.txtNomMedica);
+            this.Controls.Add(this.nombreM);
             this.Controls.Add(this.txtCantidad);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtId);
@@ -154,5 +175,7 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label2;
         public System.Windows.Forms.TextBox txtCantidad;
+        private System.Windows.Forms.Label nombreM;
+        public System.Windows.Forms.TextBox txtNomMedica;
     }
 }

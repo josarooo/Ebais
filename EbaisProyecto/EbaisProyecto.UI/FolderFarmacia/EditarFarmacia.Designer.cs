@@ -43,6 +43,8 @@
             this.label6 = new System.Windows.Forms.Label();
             this.btnConfirmarF = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
+            this.nombreM = new System.Windows.Forms.Label();
+            this.txt_nom_medica = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.numCantidad)).BeginInit();
             this.SuspendLayout();
             // 
@@ -94,7 +96,7 @@
             this.cbMedicamento.FormattingEnabled = true;
             this.cbMedicamento.Items.AddRange(new object[] {
             "pastillas",
-            "jarabes"});
+            "jarabe"});
             this.cbMedicamento.Location = new System.Drawing.Point(80, 150);
             this.cbMedicamento.Margin = new System.Windows.Forms.Padding(2);
             this.cbMedicamento.Name = "cbMedicamento";
@@ -176,10 +178,28 @@
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
+            // nombreM
+            // 
+            this.nombreM.AutoSize = true;
+            this.nombreM.Location = new System.Drawing.Point(30, 107);
+            this.nombreM.Name = "nombreM";
+            this.nombreM.Size = new System.Drawing.Size(50, 13);
+            this.nombreM.TabIndex = 85;
+            this.nombreM.Text = "Nombre: ";
+            // 
+            // txt_nom_medica
+            // 
+            this.txt_nom_medica.Location = new System.Drawing.Point(106, 107);
+            this.txt_nom_medica.Name = "txt_nom_medica";
+            this.txt_nom_medica.Size = new System.Drawing.Size(212, 20);
+            this.txt_nom_medica.TabIndex = 86;
+            // 
             // EditarFarmacia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.txt_nom_medica);
+            this.Controls.Add(this.nombreM);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnConfirmarF);
             this.Controls.Add(this.label2);
@@ -221,5 +241,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnConfirmarF;
         private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.Label nombreM;
+        public System.Windows.Forms.TextBox txt_nom_medica;
     }
 }

@@ -35,6 +35,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
+            this.txtNomP = new System.Windows.Forms.TextBox();
+            this.lblnomP = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtId
@@ -51,7 +53,7 @@
             // 
             this.txtTipo.BackColor = System.Drawing.SystemColors.Window;
             this.txtTipo.Enabled = false;
-            this.txtTipo.Location = new System.Drawing.Point(146, 87);
+            this.txtTipo.Location = new System.Drawing.Point(146, 110);
             this.txtTipo.Name = "txtTipo";
             this.txtTipo.ReadOnly = true;
             this.txtTipo.Size = new System.Drawing.Size(146, 20);
@@ -89,7 +91,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(17, 90);
+            this.label4.Location = new System.Drawing.Point(17, 113);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(34, 13);
             this.label4.TabIndex = 149;
@@ -104,10 +106,29 @@
             this.label12.TabIndex = 147;
             this.label12.Text = "Codigo Padecimiento :";
             // 
+            // txtNomP
+            // 
+            this.txtNomP.Enabled = false;
+            this.txtNomP.Location = new System.Drawing.Point(146, 79);
+            this.txtNomP.Name = "txtNomP";
+            this.txtNomP.Size = new System.Drawing.Size(146, 20);
+            this.txtNomP.TabIndex = 154;
+            // 
+            // lblnomP
+            // 
+            this.lblnomP.AutoSize = true;
+            this.lblnomP.Location = new System.Drawing.Point(20, 85);
+            this.lblnomP.Name = "lblnomP";
+            this.lblnomP.Size = new System.Drawing.Size(47, 13);
+            this.lblnomP.TabIndex = 155;
+            this.lblnomP.Text = "Nombre:";
+            // 
             // VerPadecimiento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.lblnomP);
+            this.Controls.Add(this.txtNomP);
             this.Controls.Add(this.txtId);
             this.Controls.Add(this.txtTipo);
             this.Controls.Add(this.btnCancelar);
@@ -117,6 +138,7 @@
             this.Controls.Add(this.label12);
             this.Name = "VerPadecimiento";
             this.Size = new System.Drawing.Size(349, 367);
+            this.Load += new System.EventHandler(this.VerPadecimiento_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -131,5 +153,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label12;
+        public System.Windows.Forms.TextBox txtNomP;
+        private System.Windows.Forms.Label lblnomP;
     }
 }

@@ -28,6 +28,7 @@ namespace EbaisProyecto.UI.FolderPadecimiento
                 DATOS.Padecimiento padecimiento = new DATOS.Padecimiento();
 
                 padecimiento.IdPadecimiento = Convert.ToInt32(txtCodigoPadecimento.Text);
+                padecimiento.Nombre = this.txtNombreM.Text;
                 padecimiento.Tipo = this.cbPadecimento.Text;
                 padecimiento.Descripcion = rchtDescripcion.Text;
 

@@ -51,11 +51,8 @@
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.dgvListaPadecimentoDos = new System.Windows.Forms.DataGridView();
-            this.btnBuscarNombre = new System.Windows.Forms.Button();
             this.btnBuscarId = new System.Windows.Forms.Button();
             this.txtCodigoB = new System.Windows.Forms.TextBox();
-            this.txtNombreB = new System.Windows.Forms.TextBox();
-            this.label36 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
             this.tabControlMedicamentos.SuspendLayout();
             this.tabPagePadecimientos.SuspendLayout();
@@ -155,8 +152,7 @@
             // 
             this.cbPadecimento.FormattingEnabled = true;
             this.cbPadecimento.Items.AddRange(new object[] {
-            "Asma",
-            "Diabetes"});
+            "Hereditario"});
             this.cbPadecimento.Location = new System.Drawing.Point(119, 133);
             this.cbPadecimento.Margin = new System.Windows.Forms.Padding(2);
             this.cbPadecimento.Name = "cbPadecimento";
@@ -226,11 +222,8 @@
             this.tabPageConsultaMedicamentos.Controls.Add(this.btnEditar);
             this.tabPageConsultaMedicamentos.Controls.Add(this.btnEliminar);
             this.tabPageConsultaMedicamentos.Controls.Add(this.dgvListaPadecimentoDos);
-            this.tabPageConsultaMedicamentos.Controls.Add(this.btnBuscarNombre);
             this.tabPageConsultaMedicamentos.Controls.Add(this.btnBuscarId);
             this.tabPageConsultaMedicamentos.Controls.Add(this.txtCodigoB);
-            this.tabPageConsultaMedicamentos.Controls.Add(this.txtNombreB);
-            this.tabPageConsultaMedicamentos.Controls.Add(this.label36);
             this.tabPageConsultaMedicamentos.Controls.Add(this.label35);
             this.tabPageConsultaMedicamentos.Location = new System.Drawing.Point(4, 22);
             this.tabPageConsultaMedicamentos.Name = "tabPageConsultaMedicamentos";
@@ -245,7 +238,7 @@
             this.cboPadecimentoDos.Items.AddRange(new object[] {
             "Asma",
             "Diabetes"});
-            this.cboPadecimentoDos.Location = new System.Drawing.Point(251, 136);
+            this.cboPadecimentoDos.Location = new System.Drawing.Point(251, 98);
             this.cboPadecimentoDos.Name = "cboPadecimentoDos";
             this.cboPadecimentoDos.Size = new System.Drawing.Size(213, 21);
             this.cboPadecimentoDos.TabIndex = 14;
@@ -264,7 +257,7 @@
             // btnBuscarTipo
             // 
             this.btnBuscarTipo.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnBuscarTipo.Location = new System.Drawing.Point(496, 128);
+            this.btnBuscarTipo.Location = new System.Drawing.Point(496, 90);
             this.btnBuscarTipo.Name = "btnBuscarTipo";
             this.btnBuscarTipo.Size = new System.Drawing.Size(97, 30);
             this.btnBuscarTipo.TabIndex = 12;
@@ -275,7 +268,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(112, 137);
+            this.label5.Location = new System.Drawing.Point(112, 99);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(112, 13);
             this.label5.TabIndex = 10;
@@ -314,16 +307,6 @@
             this.dgvListaPadecimentoDos.TabIndex = 6;
             this.dgvListaPadecimentoDos.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvListaPadecimentoDos_CellDoubleClick);
             // 
-            // btnBuscarNombre
-            // 
-            this.btnBuscarNombre.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnBuscarNombre.Location = new System.Drawing.Point(496, 82);
-            this.btnBuscarNombre.Name = "btnBuscarNombre";
-            this.btnBuscarNombre.Size = new System.Drawing.Size(97, 30);
-            this.btnBuscarNombre.TabIndex = 5;
-            this.btnBuscarNombre.Text = "Buscar";
-            this.btnBuscarNombre.UseVisualStyleBackColor = false;
-            // 
             // btnBuscarId
             // 
             this.btnBuscarId.BackColor = System.Drawing.SystemColors.ButtonFace;
@@ -341,22 +324,6 @@
             this.txtCodigoB.Name = "txtCodigoB";
             this.txtCodigoB.Size = new System.Drawing.Size(213, 20);
             this.txtCodigoB.TabIndex = 3;
-            // 
-            // txtNombreB
-            // 
-            this.txtNombreB.Location = new System.Drawing.Point(251, 84);
-            this.txtNombreB.Name = "txtNombreB";
-            this.txtNombreB.Size = new System.Drawing.Size(213, 20);
-            this.txtNombreB.TabIndex = 2;
-            // 
-            // label36
-            // 
-            this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(112, 91);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(130, 13);
-            this.label36.TabIndex = 1;
-            this.label36.Text = "Nombre del padecimiento:";
             // 
             // label35
             // 
@@ -407,11 +374,8 @@
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.DataGridView dgvListaPadecimentoDos;
-        private System.Windows.Forms.Button btnBuscarNombre;
         private System.Windows.Forms.Button btnBuscarId;
         private System.Windows.Forms.TextBox txtCodigoB;
-        private System.Windows.Forms.TextBox txtNombreB;
-        private System.Windows.Forms.Label label36;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox cboPadecimentoDos;

@@ -21,5 +21,10 @@ namespace EbaisProyecto.UI.FolderPadecimiento
         {
             ((Form)this.TopLevelControl).Close();
         }
+
+        private void VerPadecimiento_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

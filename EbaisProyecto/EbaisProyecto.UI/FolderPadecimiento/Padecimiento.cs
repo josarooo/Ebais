@@ -38,12 +38,12 @@ namespace EbaisProyecto.UI
                 var padecimiento = new DATOS.Padecimiento
                 {
                     IdPadecimiento = cod,
-                    //Nombre = txtNombreMedicamento.Text,
+                    Nombre = txtNombrePadecimento.Text,
                     Tipo = cbPadecimento.Text,
                     Descripcion = rchtDescrip.Text
                 };
 
-                var pade = iPade.InsertarPadecimiento(padecimiento);
+                var pade = iPade./*InsertarPadecimiento*/(padecimiento);
                 this.dgvListaPadecimentosUno.DataSource = null;
                 List<DATOS.Padecimiento> ListPade = new List<DATOS.Padecimiento> { pade };
                 dgvListaPadecimentosUno.DataSource = ListPade;
@@ -64,7 +64,7 @@ namespace EbaisProyecto.UI
         private void LimpiarCampos()
         {
 
-
+            txtNombrePadecimento.Clear();
             cbPadecimento.SelectedIndex = 0;
             rchtDescrip.Clear();
         }
@@ -73,8 +73,10 @@ namespace EbaisProyecto.UI
         {
             var editarPadecimento = new EditarPadecimiento();
             editarPadecimento.txtCodigoPadecimento.Text = dgvListaPadecimentoDos.SelectedCells[0].Value.ToString();
-            editarPadecimento.cbPadecimento.SelectedText = dgvListaPadecimentoDos.SelectedCells[1].Value.ToString();
-            editarPadecimento.rchtDescripcion.Text = dgvListaPadecimentoDos.SelectedCells[2].Value.ToString();
+            editarPadecimento.txtNombreM.Text = dgvListaPadecimentoDos.SelectedCells[1].Value.ToString();
+
+            editarPadecimento.cbPadecimento.SelectedText = dgvListaPadecimentoDos.SelectedCells[2].Value.ToString();
+            editarPadecimento.rchtDescripcion.Text = dgvListaPadecimentoDos.SelectedCells[3].Value.ToString();
 
             FormEdicion ventanaEditarPadecimento = new FormEdicion();
             ventanaEditarPadecimento.Controls.Add(editarPadecimento);
@@ -180,8 +182,11 @@ namespace EbaisProyecto.UI
             {
                 var verPadecimiento = new VerPadecimiento();
                 verPadecimiento.txtId.Text = dgvListaPadecimentoDos.SelectedCells[0].Value.ToString();
-                verPadecimiento.txtTipo.Text = dgvListaPadecimentoDos.SelectedCells[1].Value.ToString();
-                verPadecimiento.rchDesc.Text = dgvListaPadecimentoDos.SelectedCells[2].Value.ToString();
+                verPadecimiento.txtNomP.Text = dgvListaPadecimentoDos.SelectedCells[1].Value.ToString();
+
+                verPadecimiento.txtTipo.Text = dgvListaPadecimentoDos.SelectedCells[2].Value.ToString();
+
+                verPadecimiento.rchDesc.Text = dgvListaPadecimentoDos.SelectedCells[3].Value.ToString();
 
                 FormEdicion ventanaEditarPadecimiento = new FormEdicion();
                 ventanaEditarPadecimiento.Controls.Add(verPadecimiento);
